@@ -1,13 +1,63 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.AI;
 
 
-[Requirecomponent(typeof(CharacterController))]
 public class CharacterMovement : MonoBehaviour
 {
+    NavMeshAgent navMeshAgent;
+    
+    
+    private void Start()
+    {
+        navMeshAgent = GetComponent<NavMeshAgent>();
+    }
+    
+    private void Update()
+    {
+        UpdateAnimator();
+    }
+    
+    private bool InteractWithMovement()
+    {
+        RaycastHit hit;
+        bool hasHit = Physics.Raycast(GetMouseRay(), out hit);
+        if (hasHit == true)
+        {
+            if (Input.GetMouseButton(0))
+            {
+                StartMoveAction(hit.point);
+            }
+            return true;
+        }
+        return false;
+    }
 
-    private Vector3 position;
+    private static Ray GetMouseRay()
+    {
+        return Camera.main.ScreenPointToRay(Input.mousePosition);
+    }
+    
+    public void StartMoveAction(Vector3 destination)
+    {
+        MoveTo(destination);
+    }
+
+    public void MoveTo(Vector3 destination)
+    {
+        navMeshAgent.destination = destination;
+        navMeshAgent.isStopped = false;
+    }
+    
+    private void UpdateAnimator()
+    {
+        Vector3 velocity = navMeshAgent.velocity;
+        Vector3 localVelocity = transform.InverseTransformDirection(velocity);
+        float speed = localVelocity.z;
+    }
+    
+    /*private Vector3 position;
     private Charactercontroller controller;
 
     public float moveSpeed = 10f, gravity = 9.81f, jumpSpeed = 30f;
@@ -35,5 +85,5 @@ public class CharacterMovement : MonoBehaviour
         controller.Move(position * time.deltatime);
         
         
-    }
+    }*/
 }
