@@ -7,7 +7,7 @@ using UnityEngine.AI;
 public class CharacterMovement : MonoBehaviour
 {
     NavMeshAgent navMeshAgent;
-    
+    private CharacterController controller;
     
     private void Start()
     {
@@ -16,7 +16,8 @@ public class CharacterMovement : MonoBehaviour
     
     private void Update()
     {
-        UpdateAnimator();
+        //UpdateAnimator();
+        InteractWithMovement();
     }
     
     private bool InteractWithMovement()
@@ -46,8 +47,8 @@ public class CharacterMovement : MonoBehaviour
 
     public void MoveTo(Vector3 destination)
     {
-        navMeshAgent.destination = destination;
-        navMeshAgent.isStopped = false;
+        //controller.Move(destination);
+        navMeshAgent.Warp(destination);
     }
     
     private void UpdateAnimator()
