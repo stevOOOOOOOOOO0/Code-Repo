@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
@@ -6,21 +7,16 @@ using UnityEngine.AI;
 
 public class CharacterMovement : MonoBehaviour
 {
-    NavMeshAgent navMeshAgent;
-    private CharacterController controller;
+    private NavMeshAgent navMeshAgent;
+    public Transform OldLocation;
+    public GameObject ActivateMe;
     
     private void Start()
     {
         navMeshAgent = GetComponent<NavMeshAgent>();
     }
     
-    private void Update()
-    {
-        //UpdateAnimator();
-        InteractWithMovement();
-    }
-    
-    private bool InteractWithMovement()
+    public void InteractWithMovement()
     {
         RaycastHit hit;
         bool hasHit = Physics.Raycast(GetMouseRay(), out hit);
@@ -28,14 +24,14 @@ public class CharacterMovement : MonoBehaviour
         {
             if (Input.GetMouseButton(0))
             {
+                setLocation(OldLocation, transform);
+                setRotationToLookAt(OldLocation, transform);
                 StartMoveAction(hit.point);
             }
-            return true;
         }
-        return false;
     }
 
-    private static Ray GetMouseRay()
+    public static Ray GetMouseRay()
     {
         return Camera.main.ScreenPointToRay(Input.mousePosition);
     }
@@ -51,40 +47,28 @@ public class CharacterMovement : MonoBehaviour
         navMeshAgent.Warp(destination);
     }
     
-    private void UpdateAnimator()
+    public void UpdateAnimator()
     {
         Vector3 velocity = navMeshAgent.velocity;
         Vector3 localVelocity = transform.InverseTransformDirection(velocity);
         float speed = localVelocity.z;
     }
-    
-    /*private Vector3 position;
-    private Charactercontroller controller;
 
-    public float moveSpeed = 10f, gravity = 9.81f, jumpSpeed = 30f;
-    private int jumpCount;
-    public int jumpCount Max = 2;
-    
-    // Start is called before the first frame update
-    void Start()
+    public void setLocation(Transform setee, Transform setTo)
     {
-        controller = GetComponent<CharacterController>();
+        setee = setTo;
     }
 
-    // Update is called once per frame
-    void Update()
+    public void setRotationToLookAt(Transform setee, Transform LookAt)
     {
-        position.x = moveSpeed * Input.GetAxis("Horizontal");
-        position.y -= gravity;
+        setee.LookAt(LookAt);
+    }
+    
+    public void Activate()
+    {
+        ActivateMe.SetActive(true);
+        ActivateMe.transform.position = OldLocation.position;
+        ActivateMe.transform.rotation = OldLocation.rotation;
+    }
 
-        if (controller.isGrounded)
-        {
-            position.y = 0f;
-            jumpCount++;
-        }
-
-        controller.Move(position * time.deltatime);
-        
-        
-    }*/
 }
