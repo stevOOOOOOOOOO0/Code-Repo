@@ -22,12 +22,9 @@ public class CharacterMovement : MonoBehaviour
         bool hasHit = Physics.Raycast(GetMouseRay(), out hit);
         if (hasHit == true)
         {
-            if (Input.GetMouseButton(0))
-            {
                 setLocation(OldLocation, transform);
                 setRotationToLookAt(OldLocation, transform);
                 StartMoveAction(hit.point);
-            }
         }
     }
 
