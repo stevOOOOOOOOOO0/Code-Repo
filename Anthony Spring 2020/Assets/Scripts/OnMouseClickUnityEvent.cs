@@ -4,13 +4,18 @@ using UnityEngine.Events;
 
 public class OnMouseClickUnityEvent : MonoBehaviour
 {
-    public UnityEvent onMouseClick;
+    public UnityEvent MouseDown, MouseUp;
 
     public void Update()
     {
-        if (Input.GetMouseButton(0))
+        if (Input.GetMouseButtonDown(0))
         {
-            onMouseClick.Invoke();
+            MouseDown.Invoke();
+        }
+
+        if (Input.GetMouseButtonUp(0))
+        {
+            MouseUp.Invoke();
         }
     }
 

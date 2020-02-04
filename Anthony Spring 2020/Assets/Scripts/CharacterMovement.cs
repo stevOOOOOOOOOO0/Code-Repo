@@ -8,8 +8,8 @@ using UnityEngine.AI;
 public class CharacterMovement : MonoBehaviour
 {
     private NavMeshAgent navMeshAgent;
-    public Transform OldLocation;
     public GameObject ActivateMe;
+    private RaycastHit hit;
     
     private void Start()
     {
@@ -18,30 +18,18 @@ public class CharacterMovement : MonoBehaviour
     
     public void InteractWithMovement()
     {
-        RaycastHit hit;
+        
         bool hasHit = Physics.Raycast(GetMouseRay(), out hit);
-        if (hasHit == true)
+        if (hasHit)
         {
-                setLocation(OldLocation, transform);
-                setRotationToLookAt(OldLocation, transform);
-                StartMoveAction(hit.point);
+            Activate();
+            navMeshAgent.Warp(hit.point);
         }
     }
 
     public static Ray GetMouseRay()
     {
         return Camera.main.ScreenPointToRay(Input.mousePosition);
-    }
-    
-    public void StartMoveAction(Vector3 destination)
-    {
-        MoveTo(destination);
-    }
-
-    public void MoveTo(Vector3 destination)
-    {
-        //controller.Move(destination);
-        navMeshAgent.Warp(destination);
     }
     
     public void UpdateAnimator()
@@ -53,19 +41,18 @@ public class CharacterMovement : MonoBehaviour
 
     public void setLocation(Transform setee, Transform setTo)
     {
-        setee = setTo;
+        setee.position = setTo.position;
     }
 
-    public void setRotationToLookAt(Transform setee, Transform LookAt)
+    public void setRotationToLookAt(Transform setee, Transform lookAt)
     {
-        setee.LookAt(LookAt);
+        setee.LookAt(lookAt);
     }
     
     public void Activate()
     {
         ActivateMe.SetActive(true);
-        ActivateMe.transform.position = OldLocation.position;
-        ActivateMe.transform.rotation = OldLocation.rotation;
+        ActivateMe.transform.position = transform.position;
+        ActivateMe.transform.LookAt(hit.point);
     }
-
 }
