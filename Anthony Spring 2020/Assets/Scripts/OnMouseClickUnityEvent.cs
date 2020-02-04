@@ -4,7 +4,7 @@ using UnityEngine.Events;
 
 public class OnMouseClickUnityEvent : MonoBehaviour
 {
-    public UnityEvent MouseDown, OnStart;
+    public UnityEvent MouseDown, OnStart, OnUpdate;
 
     public void Start()
     {
@@ -17,5 +17,6 @@ public class OnMouseClickUnityEvent : MonoBehaviour
         {
             MouseDown.Invoke();
         }
+        OnUpdate.Invoke();
     }
 }

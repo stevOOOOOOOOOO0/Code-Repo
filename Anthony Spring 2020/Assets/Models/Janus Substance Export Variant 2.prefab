@@ -9,35 +9,39 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 100002, guid: 0297030f5b980a94e8db4d393b983dc6, type: 3}
       propertyPath: m_Name
-      value: Janus Substance Export Variant
+      value: Janus Substance Export Variant 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 100002, guid: 0297030f5b980a94e8db4d393b983dc6, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: 0297030f5b980a94e8db4d393b983dc6, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.7691488
+      value: 18.884243
       objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: 0297030f5b980a94e8db4d393b983dc6, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.4517784
+      value: 1.4165668
       objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: 0297030f5b980a94e8db4d393b983dc6, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -11.417763
+      value: -41.859543
       objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: 0297030f5b980a94e8db4d393b983dc6, type: 3}
       propertyPath: m_LocalRotation.x
-      value: -0
+      value: 0.04931669
       objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: 0297030f5b980a94e8db4d393b983dc6, type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0.666329
+      value: -0.73221236
       objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: 0297030f5b980a94e8db4d393b983dc6, type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0
+      value: 0.053323515
       objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: 0297030f5b980a94e8db4d393b983dc6, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.7456579
+      value: 0.6771924
       objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: 0297030f5b980a94e8db4d393b983dc6, type: 3}
       propertyPath: m_RootOrder

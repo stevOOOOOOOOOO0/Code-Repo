@@ -8,93 +8,16 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Assets/Scripts/CharacterMovement.cs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="765">
-              <caret line="55" lean-forward="true" selection-start-line="55" selection-end-line="55" />
-              <folding>
-                <marker date="1580797798313" expanded="true" signature="6:40" ph="..." />
-                <marker date="1580797798313" expanded="true" signature="89:1274" ph="{...}" />
-                <marker date="1580797798313" expanded="true" signature="222:287" ph="{...}" />
-                <marker date="1580797798313" expanded="true" signature="331:521" ph="{...}" />
-                <marker date="1580797798313" expanded="true" signature="429:515" ph="{...}" />
-                <marker date="1580797798313" expanded="true" signature="558:636" ph="{...}" />
-                <marker date="1580797798313" expanded="true" signature="674:854" ph="{...}" />
-                <marker date="1580797798313" expanded="true" signature="917:970" ph="{...}" />
-                <marker date="1580797798313" expanded="true" signature="1042:1084" ph="{...}" />
-                <marker date="1580797798313" expanded="true" signature="1116:1272" ph="{...}" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Assets/Scripts/DashMovement.cs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="630">
-              <caret line="46" column="5" lean-forward="true" selection-start-line="46" selection-start-column="5" selection-end-line="46" selection-end-column="5" />
-              <folding>
-                <marker date="1580799167516" expanded="true" signature="6:40" ph="..." />
-                <marker date="1580799167516" expanded="true" signature="84:1412" ph="{...}" />
-                <marker date="1580799167516" expanded="true" signature="224:289" ph="{...}" />
-                <marker date="1580799167516" expanded="true" signature="333:523" ph="{...}" />
-                <marker date="1580799167516" expanded="true" signature="431:517" ph="{...}" />
-                <marker date="1580799167516" expanded="true" signature="560:638" ph="{...}" />
-                <marker date="1580799167516" expanded="true" signature="676:856" ph="{...}" />
-                <marker date="1580799167516" expanded="true" signature="919:972" ph="{...}" />
-                <marker date="1580799167516" expanded="true" signature="1044:1086" ph="{...}" />
-                <marker date="1580799167516" expanded="true" signature="1118:1410" ph="{...}" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Assets/Scripts/GameObjectListSO.cs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="15" column="27" lean-forward="true" selection-start-line="15" selection-start-column="27" selection-end-line="15" selection-end-column="27" />
-              <folding>
-                <marker date="1580799253870" expanded="false" signature="6:116" ph="..." />
-                <marker date="1580799253870" expanded="true" signature="184:463" ph="{...}" />
-                <marker date="1580799253870" expanded="true" signature="284:386" ph="{...}" />
-                <marker date="1580799253870" expanded="true" signature="423:461" ph="{...}" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Assets/Scripts/OnMouseClickUnityEvent.cs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="10" column="25" selection-start-line="10" selection-start-column="25" selection-end-line="10" selection-end-column="25" />
-              <folding>
-                <marker date="1580798688809" expanded="true" signature="6:58" ph="..." />
-                <marker date="1580798688809" expanded="true" signature="111:355" ph="{...}" />
-                <marker date="1580798688809" expanded="true" signature="180:218" ph="{...}" />
-                <marker date="1580798688809" expanded="true" signature="248:353" ph="{...}" />
-                <marker date="1580798688809" expanded="true" signature="295:347" ph="{...}" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
-  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/DashMovement.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/CharacterMovement.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/GameObjectListSO.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/DashMovement.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/NavMeshComponents/Scripts/NavMeshSurface.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Shader/ToonComplete.shader" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/OnMouseClickUnityEvent.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/CharacterMovement.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Shader/ToonComplete.shader" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/NameID.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
@@ -104,27 +27,15 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/NameID.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/CreateAtLocation.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/ActivateAtLocation.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/CharacterMovement.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/OnMouseClickUnityEvent.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/DashMovement.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/GameObjectListSO.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/CharacterMovement.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/DashMovement.cs" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-1564" />
-    <option name="y" value="-25" />
-    <option name="width" value="1874" />
-    <option name="height" value="1096" />
-  </component>
   <component name="ProjectId" id="1WUTCJgN9PI23lTa3O8ZYXMRrdi" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
-  <component name="ProjectView">
-    <navigator proportions="" version="1">
-      <foldersAlwaysOnTop value="true" />
-    </navigator>
-    <panes />
-  </component>
   <component name="PropertiesComponent">
     <property name="Discover.Launch.Via.Unity" value="true" />
     <property name="Rider.DefaultBreakpoints.AreToggled" value="true" />
@@ -132,6 +43,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="settings.editor.selected.configurable" value="preferences.sourceCode.C#" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -177,50 +89,9 @@
       <workItem from="1580414475759" duration="5992000" />
       <workItem from="1580624635447" duration="1536000" />
       <workItem from="1580792942687" duration="6451000" />
+      <workItem from="1580830136118" duration="8567000" />
     </task>
     <servers />
-  </component>
-  <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="7987000" />
-  </component>
-  <component name="TodoView">
-    <todo-panel id="selected-file">
-      <is-autoscroll-to-source value="true" />
-    </todo-panel>
-    <todo-panel id="all">
-      <are-packages-shown value="true" />
-      <is-autoscroll-to-source value="true" />
-    </todo-panel>
-  </component>
-  <component name="ToolWindowManager">
-    <frame x="-1928" y="-8" width="1874" height="1096" extended-state="6" />
-    <layout>
-      <window_info content_ui="combo" id="Project" order="0" weight="0.25" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info id="Favorites" order="2" side_tool="true" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="NuGet" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Performance Profiler" order="8" />
-      <window_info anchor="bottom" id="Docker" order="9" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="10" />
-      <window_info anchor="bottom" id="Unity" order="11" />
-      <window_info anchor="bottom" id="Database Changes" order="12" />
-      <window_info anchor="bottom" id="Unit Tests" order="13" />
-      <window_info anchor="bottom" id="Terminal" order="14" />
-      <window_info anchor="bottom" id="Event Log" order="15" side_tool="true" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Errors In Solution" order="3" />
-      <window_info anchor="right" id="Database" order="4" />
-      <window_info anchor="right" id="Unit Tests Coverage" order="5" />
-    </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -233,12 +104,6 @@
         <entry key="MAIN">
           <value>
             <State>
-              <option name="RECENTLY_FILTERED_USER_GROUPS">
-                <collection />
-              </option>
-              <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
-                <collection />
-              </option>
               <option name="COLUMN_ORDER" />
             </State>
           </value>
@@ -263,6 +128,10 @@
   <component name="VcsManagerConfiguration">
     <option name="LOCAL_CHANGES_DETAILS_PREVIEW_SHOWN" value="true" />
   </component>
+  <component name="WindowStateProjectService">
+    <state x="445" y="161" key="SettingsEditor" />
+    <state x="445" y="161" key="SettingsEditor/1920.1080" />
+  </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
@@ -272,72 +141,5 @@
         </breakpoint>
       </breakpoints>
     </breakpoint-manager>
-  </component>
-  <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/CharacterMovement.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="765">
-          <caret line="55" lean-forward="true" selection-start-line="55" selection-end-line="55" />
-          <folding>
-            <marker date="1580797798313" expanded="true" signature="6:40" ph="..." />
-            <marker date="1580797798313" expanded="true" signature="89:1274" ph="{...}" />
-            <marker date="1580797798313" expanded="true" signature="222:287" ph="{...}" />
-            <marker date="1580797798313" expanded="true" signature="331:521" ph="{...}" />
-            <marker date="1580797798313" expanded="true" signature="429:515" ph="{...}" />
-            <marker date="1580797798313" expanded="true" signature="558:636" ph="{...}" />
-            <marker date="1580797798313" expanded="true" signature="674:854" ph="{...}" />
-            <marker date="1580797798313" expanded="true" signature="917:970" ph="{...}" />
-            <marker date="1580797798313" expanded="true" signature="1042:1084" ph="{...}" />
-            <marker date="1580797798313" expanded="true" signature="1116:1272" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/OnMouseClickUnityEvent.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="25" selection-start-line="10" selection-start-column="25" selection-end-line="10" selection-end-column="25" />
-          <folding>
-            <marker date="1580798688809" expanded="true" signature="6:58" ph="..." />
-            <marker date="1580798688809" expanded="true" signature="111:355" ph="{...}" />
-            <marker date="1580798688809" expanded="true" signature="180:218" ph="{...}" />
-            <marker date="1580798688809" expanded="true" signature="248:353" ph="{...}" />
-            <marker date="1580798688809" expanded="true" signature="295:347" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/DashMovement.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="630">
-          <caret line="46" column="5" lean-forward="true" selection-start-line="46" selection-start-column="5" selection-end-line="46" selection-end-column="5" />
-          <folding>
-            <marker date="1580799167516" expanded="true" signature="6:40" ph="..." />
-            <marker date="1580799167516" expanded="true" signature="84:1412" ph="{...}" />
-            <marker date="1580799167516" expanded="true" signature="224:289" ph="{...}" />
-            <marker date="1580799167516" expanded="true" signature="333:523" ph="{...}" />
-            <marker date="1580799167516" expanded="true" signature="431:517" ph="{...}" />
-            <marker date="1580799167516" expanded="true" signature="560:638" ph="{...}" />
-            <marker date="1580799167516" expanded="true" signature="676:856" ph="{...}" />
-            <marker date="1580799167516" expanded="true" signature="919:972" ph="{...}" />
-            <marker date="1580799167516" expanded="true" signature="1044:1086" ph="{...}" />
-            <marker date="1580799167516" expanded="true" signature="1118:1410" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/GameObjectListSO.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="15" column="27" lean-forward="true" selection-start-line="15" selection-start-column="27" selection-end-line="15" selection-end-column="27" />
-          <folding>
-            <marker date="1580799253870" expanded="false" signature="6:116" ph="..." />
-            <marker date="1580799253870" expanded="true" signature="184:463" ph="{...}" />
-            <marker date="1580799253870" expanded="true" signature="284:386" ph="{...}" />
-            <marker date="1580799253870" expanded="true" signature="423:461" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
   </component>
 </project>

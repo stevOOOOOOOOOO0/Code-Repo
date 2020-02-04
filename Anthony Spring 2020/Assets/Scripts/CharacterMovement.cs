@@ -15,7 +15,6 @@ public class CharacterMovement : MonoBehaviour
     
     public void InteractWithMovement()
     {
-        
         bool hasHit = Physics.Raycast(GetMouseRay(), out hit);
         if (hasHit)
         {
@@ -27,13 +26,6 @@ public class CharacterMovement : MonoBehaviour
     public static Ray GetMouseRay()
     {
         return Camera.main.ScreenPointToRay(Input.mousePosition);
-    }
-    
-    public void UpdateAnimator()
-    {
-        Vector3 velocity = navMeshAgent.velocity;
-        Vector3 localVelocity = transform.InverseTransformDirection(velocity);
-        float speed = localVelocity.z;
     }
 
     public void setLocation(Transform setee, Transform setTo)
