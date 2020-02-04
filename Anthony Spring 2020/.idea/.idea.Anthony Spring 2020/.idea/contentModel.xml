@@ -13,6 +13,7 @@
           <e p="CharacterMovement.cs" t="Include" />
           <e p="DashMovement.cs" t="Include" />
           <e p="DoWork.cs" t="Include" />
+          <e p="GameObjectListSO.cs" t="Include" />
           <e p="IDChecker.cs" t="Include" />
           <e p="NameID.cs" t="Include" />
           <e p="NavMeshComponents" t="Include">

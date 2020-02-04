@@ -1,61 +1,57 @@
 ﻿using UnityEngine;
 using UnityEngine.AI;
 
+
 public class DashMovement : MonoBehaviour
 {
-    
     private NavMeshAgent navMeshAgent;
-    public Transform OldLocation;
-    public GameObject ActivateMe;
+    private RaycastHit hit;
+    public GameObjectListSO AfterImages;
     
-    // Start is called before the first frame update
-    void Start()
+    private void Start()
     {
         navMeshAgent = GetComponent<NavMeshAgent>();
     }
-
-    public void Dash()
+    
+    public void InteractWithMovement()
     {
-        RaycastHit hit;
+        
         bool hasHit = Physics.Raycast(GetMouseRay(), out hit);
-        if (hasHit == true)
+        if (hasHit)
         {
-            setLocation(OldLocation, transform);
-            setRotationToLookAt(OldLocation, transform);
-            StartMoveAction(hit.point);
+            Activate();
+            navMeshAgent.Warp(hit.point);
         }
     }
-    
-    public void setLocation(Transform setee, Transform setTo)
-    {
-        setee = setTo;
-    }
 
-    public void setRotationToLookAt(Transform setee, Transform LookAt)
-    {
-        setee.LookAt(LookAt);
-    }
-    
-    public void StartMoveAction(Vector3 destination)
-    {
-        MoveTo(destination);
-    }
-    
-    public void MoveTo(Vector3 destination)
-    {
-        //controller.Move(destination);
-        navMeshAgent.Warp(destination);
-    }
-    
     public static Ray GetMouseRay()
     {
         return Camera.main.ScreenPointToRay(Input.mousePosition);
     }
     
+    public void UpdateAnimator()
+    {
+        Vector3 velocity = navMeshAgent.velocity;
+        Vector3 localVelocity = transform.InverseTransformDirection(velocity);
+        float speed = localVelocity.z;
+    }
+
+    public void setLocation(Transform setee, Transform setTo)
+    {
+        setee.position = setTo.position;
+    }
+
+    public void setRotationToLookAt(Transform setee, Transform lookAt)
+    {
+        setee.LookAt(lookAt);
+    }
+    
     public void Activate()
     {
-        ActivateMe.SetActive(true);
-        ActivateMe.transform.position = OldLocation.position;
-        ActivateMe.transform.rotation = OldLocation.rotation;
+        AfterImages.GOList[0].SetActive(true);
+        print(AfterImages.GetFirstObj().activeInHierarchy);
+        AfterImages.GetFirstObj().transform.position = transform.position;
+        AfterImages.GetFirstObj().transform.LookAt(hit.point);
+        AfterImages.FirstToLast();
     }
 }
