@@ -9,7 +9,8 @@ public class DashMovement : MonoBehaviour
     private NavMeshAgent navMeshAgent;
     private RaycastHit hit;
     private Vector3 OldLocation;
-    public GameObjectListSO AfterImages;
+    //public GameObjectListSO AfterImages;
+    public GameObject afterImage;
 
     private void Start()
     {
@@ -22,40 +23,41 @@ public class DashMovement : MonoBehaviour
         navMeshAgent.Move(movementVector);
     }
 
-    public void NavMeshWarp()
+    public void NavMeshWarpToClick()
     {
-        bool hasHit = Physics.Raycast(GetMouseRay(), out hit);
+        bool hasHit = Physics.Raycast(Camera.main.ScreenPointToRay(Input.mousePosition), out hit);
         if (hasHit)
         {
             navMeshAgent.Warp(hit.point);
         }
-    }
-    
-    private static Ray GetMouseRay()
-    {
-        return Camera.main.ScreenPointToRay(Input.mousePosition);
+        //print("navmeshwarptoclick");
     }
 
     public void SetOldLocation()
     {
         OldLocation = transform.position;
+        //print("setoldlocation");
     }
 
     public void Activate()
     {
-        AfterImages.GOList[0].transform.position = OldLocation;
-        StartCoroutine(FaceTowards(AfterImages.GOList[0], hit.point));
+        afterImage.SetActive(true);
+        afterImage.transform.position = OldLocation;
+        StartCoroutine(FaceTowards());
+        //print("Activate");
     }
 
-    public IEnumerator FaceTowards(GameObject Looker, Vector3 lookAt)
+    public IEnumerator FaceTowards()
     {
-        bool hasHit = Physics.Raycast(GetMouseRay(), out hit);
+        bool hasHit = Physics.Raycast(Camera.main.ScreenPointToRay(Input.mousePosition), out hit);
         while (hasHit)
         {
-            Looker.transform.LookAt(lookAt);
+            afterImage.transform.LookAt(hit.point);
             yield return new WaitForSeconds(0);
         }
     }
+    
+    
     /*private NavMeshAgent navMeshAgent;
     private RaycastHit hit;
     public GameObjectListSO AfterImages;

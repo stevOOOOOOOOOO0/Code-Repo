@@ -12,6 +12,7 @@
           <e p="ActivateAtLocation.cs" t="Include" />
           <e p="CharacterMovement.cs" t="Include" />
           <e p="DashMovement.cs" t="Include" />
+          <e p="DisableAfterTime.cs" t="Include" />
           <e p="DoWork.cs" t="Include" />
           <e p="GameObjectListSO.cs" t="Include" />
           <e p="IDChecker.cs" t="Include" />
