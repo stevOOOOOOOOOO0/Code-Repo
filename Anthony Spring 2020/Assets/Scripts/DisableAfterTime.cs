@@ -4,5 +4,5 @@ using UnityEngine;
 
 public class DisableAfterTime : MonoBehaviour
 {
-    public void 
+    
 }
