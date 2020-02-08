@@ -14,10 +14,26 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Base: {fileID: 8972447796510535221, guid: 9ed172ac2a4d27f4aa27162c4f83074f, type: 3}
   AfterImages:
-  - {fileID: 8972447796510535221, guid: 9ed172ac2a4d27f4aa27162c4f83074f, type: 3}
-  - {fileID: 8972447796510535221, guid: 9ed172ac2a4d27f4aa27162c4f83074f, type: 3}
-  - {fileID: 8972447796510535221, guid: 9ed172ac2a4d27f4aa27162c4f83074f, type: 3}
-  - {fileID: 8972447796510535221, guid: 9ed172ac2a4d27f4aa27162c4f83074f, type: 3}
-  - {fileID: 8972447796510535221, guid: 9ed172ac2a4d27f4aa27162c4f83074f, type: 3}
-  AfterImagesActive: []
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  AfterImagesActive:
+  - {fileID: 0}
   Location: {fileID: 0}
+  RayCollision:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 11400000, guid: f11505db7be58f9498cb2b0c97a10cc9, type: 2}
+        m_MethodName: RaiseAction
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null

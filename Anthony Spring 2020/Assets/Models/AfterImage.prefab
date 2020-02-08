@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1703665778946494183}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: AfterImage
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -47,6 +47,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4802261702928192991, guid: aad66eb4517f1254da6a0bfbcdd7689f,
+        type: 3}
+      propertyPath: m_Layer
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 4802261702927763967, guid: aad66eb4517f1254da6a0bfbcdd7689f,
         type: 3}
@@ -117,6 +122,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.x
       value: 0.01
+      objectReference: {fileID: 0}
+    - target: {fileID: 4802261702928192989, guid: aad66eb4517f1254da6a0bfbcdd7689f,
+        type: 3}
+      propertyPath: m_Layer
+      value: 10
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: aad66eb4517f1254da6a0bfbcdd7689f, type: 3}

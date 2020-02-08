@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
 [CreateAssetMenu]
 public class AfterImagesSOPrototype : ScriptableObject
@@ -9,20 +10,20 @@ public class AfterImagesSOPrototype : ScriptableObject
     public List<GameObject> AfterImages, AfterImagesActive;
     public Transform Location;
     private bool Work;
+    public UnityEvent RayCollision;
 
     public void Start()
     {
         AfterImages.Clear();
         AfterImagesActive.Clear();
-        AfterImages.Add(Base);
-        AfterImages.Add(Base);
-        AfterImages.Add(Base);
-        AfterImages.Add(Base);
-        AfterImages.Add(Base);
+        AfterImages.Add(Instantiate(Base));
+        AfterImages.Add(Instantiate(Base));
+        AfterImages.Add(Instantiate(Base));
+        AfterImages.Add(Instantiate(Base));
+        AfterImages.Add(Instantiate(Base));
         
         foreach (var VARIABLE in AfterImages)
         {
-            Instantiate(VARIABLE);
             VARIABLE.SetActive(false);
         }
     }
@@ -33,7 +34,6 @@ public class AfterImagesSOPrototype : ScriptableObject
         {
             Work = true;
             AfterImages[0].SetActive(true);
-            Debug.Log(AfterImages[0].activeSelf);
             AfterImagesActive.Add(AfterImages[0]);
             AfterImages.Remove(AfterImages[0]);
         }
@@ -84,7 +84,8 @@ public class AfterImagesSOPrototype : ScriptableObject
             {
                 if (hit.collider.gameObject.layer == 9)
                 {
-                    hit.collider.gameObject.SendMessage("Explode");
+                    RayCollision.Invoke();
+                    //hit.collider.gameObject.SendMessage("Explode");
                 }
             }
 
