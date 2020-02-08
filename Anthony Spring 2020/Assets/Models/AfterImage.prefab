@@ -1,24 +1,5 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!95 &912413375679269815
-Animator:
-  serializedVersion: 3
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5624015938608535797}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 475c2e9bd8b3602419194fcac2180dc8, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &8972447796510535221
 GameObject:
   m_ObjectHideFlags: 0
@@ -34,7 +15,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1703665778946494183
 Transform:
   m_ObjectHideFlags: 0
@@ -42,8 +23,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8972447796510535221}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 24.254301, y: 2.38395, z: -32.573067}
+  m_LocalRotation: {x: 0.021152306, y: -0.24517524, z: 0.005350644, w: 0.9692333}
+  m_LocalPosition: {x: 7.4072485, y: 1.0833334, z: -1.9934015}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 5624015938608301269}
@@ -70,37 +51,37 @@ PrefabInstance:
     - target: {fileID: 4802261702927763967, guid: aad66eb4517f1254da6a0bfbcdd7689f,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.06056595
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4802261702927763967, guid: aad66eb4517f1254da6a0bfbcdd7689f,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -1.0865762
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4802261702927763967, guid: aad66eb4517f1254da6a0bfbcdd7689f,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -1.3145447
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4802261702927763967, guid: aad66eb4517f1254da6a0bfbcdd7689f,
         type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0.014800552
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4802261702927763967, guid: aad66eb4517f1254da6a0bfbcdd7689f,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0.3061568
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4802261702927763967, guid: aad66eb4517f1254da6a0bfbcdd7689f,
         type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0.004760488
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4802261702927763967, guid: aad66eb4517f1254da6a0bfbcdd7689f,
         type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.95185417
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4802261702927763967, guid: aad66eb4517f1254da6a0bfbcdd7689f,
         type: 3}
@@ -125,21 +106,20 @@ PrefabInstance:
     - target: {fileID: 4802261702927763967, guid: aad66eb4517f1254da6a0bfbcdd7689f,
         type: 3}
       propertyPath: m_LocalScale.y
-      value: 0.009999998
+      value: 0.01
       objectReference: {fileID: 0}
     - target: {fileID: 4802261702927763967, guid: aad66eb4517f1254da6a0bfbcdd7689f,
         type: 3}
       propertyPath: m_LocalScale.z
-      value: 0.010000001
+      value: 0.01
+      objectReference: {fileID: 0}
+    - target: {fileID: 4802261702927763967, guid: aad66eb4517f1254da6a0bfbcdd7689f,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.01
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: aad66eb4517f1254da6a0bfbcdd7689f, type: 3}
---- !u!1 &5624015938608535797 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 4802261702928192991, guid: aad66eb4517f1254da6a0bfbcdd7689f,
-    type: 3}
-  m_PrefabInstance: {fileID: 912413376298798378}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &5624015938608301269 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4802261702927763967, guid: aad66eb4517f1254da6a0bfbcdd7689f,

@@ -44,6 +44,10 @@ public class AfterImagePrototype : MonoBehaviour
     {
         RaycastHit hit;
         Physics.Raycast(AfterImage.position, AfterImage.forward, out hit, Vector3.Distance(AfterImage.position, Location.position));
+            if (hit.collider.gameObject.layer == 9)
+            {
+                hit.collider.gameObject.SendMessage("Explode");
+            }
         Debug.DrawRay(AfterImage.position, AfterImage.forward * Vector3.Distance(AfterImage.position, Location.position), Color.green, 3f);
     }
 }
