@@ -1,7 +1,8 @@
-﻿using System.Collections;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
+using System.Security.Cryptography.X509Certificates;
 using UnityEngine;
 using UnityEngine.Events;
+using UnityEngine.Experimental.UIElements;
 
 [CreateAssetMenu]
 public class AfterImagesSOPrototype : ScriptableObject
@@ -10,7 +11,6 @@ public class AfterImagesSOPrototype : ScriptableObject
     public List<GameObject> AfterImages, AfterImagesActive;
     public Transform Location;
     private bool Work;
-    public UnityEvent RayCollision;
 
     public void Start()
     {
@@ -58,22 +58,7 @@ public class AfterImagesSOPrototype : ScriptableObject
             AfterImagesActive[AfterImagesActive.Count - 1].transform.LookAt(Location);
         }
     }
-
-    public void StartDisableCoroutine()
-    {
-        //StartCoroutine(DisableCoroutine());
-    }
     
-    public IEnumerator DisableCoroutine()
-    {
-        if (Work)
-        {
-            yield return new WaitForSeconds(3);
-            Debug.Log("3 seconds over");
-            AfterImages.Add(AfterImagesActive[AfterImagesActive.Count - 1]);
-            AfterImages[AfterImages.Count - 1].gameObject.SetActive(false);
-        }
-    }
 
     public void CastTheRay()
     {
@@ -84,12 +69,21 @@ public class AfterImagesSOPrototype : ScriptableObject
             {
                 if (hit.collider.gameObject.layer == 9)
                 {
-                    RayCollision.Invoke();
-                    //hit.collider.gameObject.SendMessage("Explode");
+                    hit.collider.gameObject.GetComponent<EnemyBehaviorsPrototype>().InvokeOnHit();
                 }
             }
 
             Debug.DrawRay(AfterImagesActive[AfterImagesActive.Count - 1].transform.position, AfterImagesActive[AfterImagesActive.Count - 1].transform.forward * Vector3.Distance(AfterImagesActive[AfterImagesActive.Count - 1].transform.position, Location.position), Color.green, 3f);
         }
+    }
+
+    
+    public void Move()
+    {
+        AfterImagesActive[AfterImagesActive.Count - 1].GetComponent<MoveOverTime>().Location = Location.position;
+        AfterImagesActive[AfterImagesActive.Count - 1].GetComponent<MoveOverTime>().Time = .25f;
+        Debug.Log(AfterImagesActive[AfterImagesActive.Count - 1].GetComponent<MoveOverTime>().Time);
+        AfterImagesActive[AfterImagesActive.Count - 1].GetComponent<MoveOverTime>().waitTime = .5f;
+        AfterImagesActive[AfterImagesActive.Count - 1].GetComponent<MoveOverTime>().StartWaitTime();
     }
 }

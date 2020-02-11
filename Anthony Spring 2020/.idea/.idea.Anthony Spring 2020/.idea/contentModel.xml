@@ -19,12 +19,14 @@
           <e p="CharacterMovement.cs" t="Include" />
           <e p="DashMovement.cs" t="Include" />
           <e p="DisableAfterTime.cs" t="Include" />
+          <e p="DisableObjectCoroutine.cs" t="Include" />
           <e p="DoWork.cs" t="Include" />
           <e p="EnemyBehaviorsPrototype.cs" t="Include" />
           <e p="GameAction.cs" t="Include" />
           <e p="GameActionHandler.cs" t="Include" />
           <e p="GameObjectListSO.cs" t="Include" />
           <e p="IDChecker.cs" t="Include" />
+          <e p="MoveOverTime.cs" t="Include" />
           <e p="NameID.cs" t="Include" />
           <e p="NavMeshComponents" t="Include">
             <e p="Editor" t="Include">

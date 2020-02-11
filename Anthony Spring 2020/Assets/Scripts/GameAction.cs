@@ -5,8 +5,7 @@ using UnityEngine.Events;
 public class GameAction : ScriptableObject
 {
     public UnityAction Raise;
-
-    //Overloading
+    
     public void RaiseAction()
     {
         Raise();

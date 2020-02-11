@@ -1,11 +1,15 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class EnemyBehaviorsPrototype : MonoBehaviour
 {
-    public void Explode()
+
+    public UnityEvent OnHit;
+
+    public void InvokeOnHit()
     {
-        Transform.Destroy(gameObject);
+        OnHit.Invoke();
     }
 }
