@@ -8,30 +8,25 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="FindInProjectRecents">
-    <findStrings>
-      <find>-1</find>
-      <find>setactive</find>
-    </findStrings>
-  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/EnemyBehaviorsPrototype.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/NavMeshComponents/Scripts/NavMeshSurface.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Follow.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/OnMouseClickUnityEvent.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/DisableObjectCoroutine.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/GameAction.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/MoveOverTime.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/AfterImagesSOPrototype.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/GameActionHandler.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/CameraScripts/DisableAttributes.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Dice/UnityEventTriggers.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/DashMovement.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Shader/ToonComplete.shader" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Dice/CharacterControllerMovements.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/NavMeshComponents/Editor/NavMeshSurfaceEditor.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/LookAt.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/DisableObjectCoroutine.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/DashMovement.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/NavMeshComponents/Scripts/NavMeshSurface.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/GameActionHandler.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/AfterImagesSOPrototype.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/GameAction.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/EnemyBehaviorsPrototype.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/MoveOverTime.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Shader/ToonComplete.shader" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Dice/UnityEventTriggers.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -48,15 +43,17 @@
         <option value="$PROJECT_DIR$/Assets/Dice/CharacterControllerMovements.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/OnMouseClickUnityEvent.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/TriggerEvents.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/DashMovement.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/AfterImagePrototype.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/GameActionHandler.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/GameAction.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/EnemyBehaviorsPrototype.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/DisableCoroutine.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/AfterImagesSOPrototype.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/MoveOverTime.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/CameraScripts/DisableAttributes.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/MoveOverTime.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/AfterImagesSOPrototype.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Follow.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/LookAt.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/DashMovement.cs" />
       </list>
     </option>
   </component>
@@ -123,6 +120,7 @@
       <workItem from="1581182783474" duration="3275000" />
       <workItem from="1581374968170" duration="7232000" />
       <workItem from="1581439488578" duration="2069000" />
+      <workItem from="1581445780159" duration="8156000" />
     </task>
     <servers />
   </component>

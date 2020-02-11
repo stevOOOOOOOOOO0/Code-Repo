@@ -21,6 +21,11 @@ public class AfterImagesSOPrototype : ScriptableObject
         AfterImages.Add(Instantiate(Base));
         AfterImages.Add(Instantiate(Base));
         AfterImages.Add(Instantiate(Base));
+        AfterImages.Add(Instantiate(Base));
+        AfterImages.Add(Instantiate(Base));
+        AfterImages.Add(Instantiate(Base));
+        AfterImages.Add(Instantiate(Base));
+        AfterImages.Add(Instantiate(Base));
         
         foreach (var VARIABLE in AfterImages)
         {
@@ -85,5 +90,11 @@ public class AfterImagesSOPrototype : ScriptableObject
         Debug.Log(AfterImagesActive[AfterImagesActive.Count - 1].GetComponent<MoveOverTime>().Time);
         AfterImagesActive[AfterImagesActive.Count - 1].GetComponent<MoveOverTime>().waitTime = .5f;
         AfterImagesActive[AfterImagesActive.Count - 1].GetComponent<MoveOverTime>().StartWaitTime();
+    }
+
+    public void Disable()
+    {
+        AfterImages.Add(AfterImagesActive[AfterImagesActive.Count - 1]);
+        AfterImages[AfterImages.Count - 1].SetActive(false);
     }
 }

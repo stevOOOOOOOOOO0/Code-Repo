@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class MoveOverTime : MonoBehaviour
 {
@@ -7,6 +8,7 @@ public class MoveOverTime : MonoBehaviour
     private bool CanMove = false;
     public Vector3 Location, OldLocation;
     public float Time, waitTime;
+    public UnityEvent AfterMoveEvent;
 
     // Update is called once per frame
     void Update()
@@ -18,6 +20,7 @@ public class MoveOverTime : MonoBehaviour
             if (transform.position == Location)
             {
                 CanMove = false;
+                AfterMoveEvent.Invoke();
             }
         }
     }

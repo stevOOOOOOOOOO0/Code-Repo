@@ -6,15 +6,10 @@ public class DashMovement : MonoBehaviour
 {
 
     private Vector3 movementVector;
-    private NavMeshAgent navMeshAgent;
+    public NavMeshAgent navMeshAgent;
     private RaycastHit hit;
     public AfterImagesSOPrototype AfterImageSO;
 
-    private void Start()
-    {
-        navMeshAgent = GetComponent<NavMeshAgent>();
-    }
-    
     public void BaseMovement()
     {
         AfterImageSO.Location = transform;
