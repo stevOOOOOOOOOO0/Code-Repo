@@ -5,8 +5,8 @@ using UnityEngine.AI;
 public class DashMovement : MonoBehaviour
 {
 
-    private Vector3 movementVector;
-    public NavMeshAgent navMeshAgent;
+    private Vector3 movementVector, newPosition;
+    public CharacterController Controller;
     private RaycastHit hit;
     public AfterImagesSOPrototype AfterImageSO;
 
@@ -14,15 +14,15 @@ public class DashMovement : MonoBehaviour
     {
         AfterImageSO.Location = transform;
         movementVector.Set(Input.GetAxis("Vertical") * .25f, 0, -Input.GetAxis("Horizontal") * .25f);
-        navMeshAgent.Move(movementVector);
+        Controller.Move(movementVector);
     }
 
     public void NavMeshWarpToClick()
     {
-        bool hasHit = Physics.Raycast(Camera.main.ScreenPointToRay(Input.mousePosition), out hit);
-        if (hasHit)
+        if (Physics.Raycast(Camera.main.ScreenPointToRay(Input.mousePosition), out hit))
         {
-            navMeshAgent.Warp(hit.point);
+            newPosition = Vector3.MoveTowards(AfterImageSO.Location.position, hit.point, 1f);
+            //Controller.transform.position.Set(newPosition);
         }
     }
 }

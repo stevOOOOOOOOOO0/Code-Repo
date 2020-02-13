@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657844, g: 0.49641222, b: 0.57481694, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -350,6 +350,28 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1876273429}
+        m_MethodName: StopLooking
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1876273430}
+        m_MethodName: StopFollowing
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
   MouseDown:
@@ -395,6 +417,28 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 11400000, guid: d9d776d448f1d6447a4b988d77579dd6, type: 2}
         m_MethodName: Move
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1876273430}
+        m_MethodName: StartFollowing
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1876273429}
+        m_MethodName: Startlooking
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -461,7 +505,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 87af488ff9f505a4e984822a3ded3111, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  navMeshAgent: {fileID: 626830697}
+  Controller: {fileID: 0}
   AfterImageSO: {fileID: 11400000, guid: d9d776d448f1d6447a4b988d77579dd6, type: 2}
 --- !u!136 &626830699
 CapsuleCollider:
@@ -530,7 +574,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 626830696}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -2.3809247, y: -2.6657581, z: 2.001028}
+  m_LocalPosition: {x: 16.8, y: 1.5, z: 31.4}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -729,7 +773,7 @@ MonoBehaviour:
   m_OverrideVoxelSize: 0
   m_VoxelSize: 0.16666667
   m_BuildHeightMesh: 0
-  m_NavMeshData: {fileID: 23800000, guid: 33f0444c48715444e835f872e8e136f4, type: 2}
+  m_NavMeshData: {fileID: 23800000, guid: fa0451e9db4446049a31777bbc44c39a, type: 2}
 --- !u!4 &1762701703
 Transform:
   m_ObjectHideFlags: 0
@@ -754,6 +798,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1876273428}
   - component: {fileID: 1876273427}
+  - component: {fileID: 1876273430}
+  - component: {fileID: 1876273429}
   - component: {fileID: 1876273426}
   m_Layer: 0
   m_Name: Camera
@@ -820,12 +866,43 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1876273425}
   m_LocalRotation: {x: 0.18597648, y: 0.67510074, z: -0.18186992, w: 0.6903443}
-  m_LocalPosition: {x: -2.3809247, y: 18.7, z: -16.8}
+  m_LocalPosition: {x: -3.6, y: 18.7, z: 37}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 30.155, y: 88.721, z: 0}
+--- !u!114 &1876273429
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1876273425}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9c044f3db614ede4a8144f3ab08ae2ad, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  LookAtMe: {fileID: 626830702}
+  Smoothness: 0.1
+  Looking: 1
+--- !u!114 &1876273430
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1876273425}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 95e6ac94bdb009f438972baeb8717d51, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  FollowMe: {fileID: 626830702}
+  Offset: {x: -30, y: 15, z: 0}
+  Smoothness: 0.05
+  Following: 1
 --- !u!1 &1939206781
 GameObject:
   m_ObjectHideFlags: 0
