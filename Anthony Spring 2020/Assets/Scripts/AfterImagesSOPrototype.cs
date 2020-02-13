@@ -77,8 +77,6 @@ public class AfterImagesSOPrototype : ScriptableObject
                     hit.collider.gameObject.GetComponent<EnemyBehaviorsPrototype>().InvokeOnHit();
                 }
             }
-
-            Debug.DrawRay(AfterImagesActive[AfterImagesActive.Count - 1].transform.position, AfterImagesActive[AfterImagesActive.Count - 1].transform.forward * Vector3.Distance(AfterImagesActive[AfterImagesActive.Count - 1].transform.position, Location.position), Color.green, 3f);
         }
     }
 
@@ -87,7 +85,6 @@ public class AfterImagesSOPrototype : ScriptableObject
     {
         AfterImagesActive[AfterImagesActive.Count - 1].GetComponent<MoveOverTime>().Location = Location.position;
         AfterImagesActive[AfterImagesActive.Count - 1].GetComponent<MoveOverTime>().Time = .25f;
-        Debug.Log(AfterImagesActive[AfterImagesActive.Count - 1].GetComponent<MoveOverTime>().Time);
         AfterImagesActive[AfterImagesActive.Count - 1].GetComponent<MoveOverTime>().waitTime = .5f;
         AfterImagesActive[AfterImagesActive.Count - 1].GetComponent<MoveOverTime>().StartWaitTime();
     }

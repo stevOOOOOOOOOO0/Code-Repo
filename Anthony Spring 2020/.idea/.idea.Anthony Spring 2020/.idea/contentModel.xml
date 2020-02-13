@@ -15,10 +15,13 @@
         <e p="Scripts" t="Include">
           <e p="AfterImagesSOPrototype.cs" t="Include" />
           <e p="DashMovement.cs" t="Include" />
+          <e p="Debugger.cs" t="Include" />
           <e p="DisableObjectCoroutine.cs" t="Include" />
           <e p="EnemyBehaviorsPrototype.cs" t="Include" />
+          <e p="Follow.cs" t="Include" />
           <e p="GameAction.cs" t="Include" />
           <e p="GameActionHandler.cs" t="Include" />
+          <e p="LookAt.cs" t="Include" />
           <e p="MoveOverTime.cs" t="Include" />
           <e p="NavMeshComponents" t="Include">
             <e p="Editor" t="Include">
