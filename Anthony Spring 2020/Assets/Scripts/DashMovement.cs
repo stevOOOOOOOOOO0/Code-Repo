@@ -1,6 +1,5 @@
-﻿using System.Collections;
-using UnityEngine;
-using UnityEngine.AI;
+﻿using UnityEngine;
+using Vector3 = UnityEngine.Vector3;
 
 public class DashMovement : MonoBehaviour
 {
@@ -9,6 +8,7 @@ public class DashMovement : MonoBehaviour
     public CharacterController Controller;
     private RaycastHit hit;
     public AfterImagesSOPrototype AfterImageSO;
+    private Vector3 moveDirection;
 
     public void BaseMovement()
     {
@@ -17,12 +17,15 @@ public class DashMovement : MonoBehaviour
         Controller.Move(movementVector);
     }
 
-    public void NavMeshWarpToClick()
+    public void CharacterControllerMoveToClick()
     {
         if (Physics.Raycast(Camera.main.ScreenPointToRay(Input.mousePosition), out hit))
         {
-            newPosition = Vector3.MoveTowards(AfterImageSO.Location.position, hit.point, 1f);
-            //Controller.transform.position.Set(newPosition);
+            moveDirection = hit.point - transform.position;
+            moveDirection -= Vector3.forward * 1;
+            Controller.Move(moveDirection);
         }
     }
+    
+    
 }
