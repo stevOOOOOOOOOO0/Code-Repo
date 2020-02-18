@@ -7,7 +7,7 @@ public class NavMeshAgentBehavior : MonoBehaviour
 {
 
     public NavMeshAgent Controller;
-    public Vector3 Destination;
+    public Transform Destination;
     
     // Start is called before the first frame update
     void Start()
@@ -18,15 +18,15 @@ public class NavMeshAgentBehavior : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Controller.SetDestination(Destination);
+        Controller.SetDestination(Destination.position);
     }
     
     public void StopHunting()
     {
-        Destination = Controller.transform.position;
+        Destination = Controller.transform;
     }
 
-    public void StartHunting(Vector3 Location)
+    public void StartHunting(Transform Location)
     {
         Destination = Location;
     }
