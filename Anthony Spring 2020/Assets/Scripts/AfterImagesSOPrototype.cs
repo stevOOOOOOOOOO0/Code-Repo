@@ -9,22 +9,21 @@ public class AfterImagesSOPrototype : ScriptableObject
 {
     public GameObject Base;
     public List<GameObject> AfterImages, AfterImagesActive;
-    public Transform Location;
     private bool Work;
 
     public void Start()
     {
         AfterImages.Clear();
         AfterImagesActive.Clear();
-        AfterImages.Add(Instantiate(Base));
-        AfterImages.Add(Instantiate(Base));
-        AfterImages.Add(Instantiate(Base));
-        AfterImages.Add(Instantiate(Base));
-        AfterImages.Add(Instantiate(Base));
-        AfterImages.Add(Instantiate(Base));
-        AfterImages.Add(Instantiate(Base));
-        AfterImages.Add(Instantiate(Base));
-        AfterImages.Add(Instantiate(Base));
+//        AfterImages.Add(Instantiate(Base));
+//        AfterImages.Add(Instantiate(Base));
+//        AfterImages.Add(Instantiate(Base));
+//        AfterImages.Add(Instantiate(Base));
+//        AfterImages.Add(Instantiate(Base));
+//        AfterImages.Add(Instantiate(Base));
+//        AfterImages.Add(Instantiate(Base));
+//        AfterImages.Add(Instantiate(Base));
+//        AfterImages.Add(Instantiate(Base));
         AfterImages.Add(Instantiate(Base));
         
         foreach (var VARIABLE in AfterImages)
@@ -48,7 +47,7 @@ public class AfterImagesSOPrototype : ScriptableObject
         }
     }
 
-    public void SetLocation()
+    public void SetLocation(Transform Location)
     {
         if (Work)
         {
@@ -56,7 +55,7 @@ public class AfterImagesSOPrototype : ScriptableObject
         }
     }
 
-    public void SetRotation()
+    public void SetRotation(Transform Location)
     {
         if (Work)
         {
@@ -65,7 +64,7 @@ public class AfterImagesSOPrototype : ScriptableObject
     }
     
 
-    public void CastTheRay()
+    public void CastTheRay(Transform Location)
     {
         if (Work)
         {
@@ -81,7 +80,7 @@ public class AfterImagesSOPrototype : ScriptableObject
     }
 
     
-    public void Move()
+    public void Move(Transform Location)
     {
         AfterImagesActive[AfterImagesActive.Count - 1].GetComponent<MoveOverTime>().Location = Location.position;
         AfterImagesActive[AfterImagesActive.Count - 1].GetComponent<MoveOverTime>().Time = .25f;

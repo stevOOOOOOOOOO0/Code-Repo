@@ -21,6 +21,7 @@ public class DashMovement : MonoBehaviour
         {
             moveDirection = hit.point - transform.position;
             moveDirection -= Vector3.forward * 1;
+            moveDirection.Set(moveDirection.x, 0, moveDirection.z);
             Controller.Move(moveDirection);
         }
     }
