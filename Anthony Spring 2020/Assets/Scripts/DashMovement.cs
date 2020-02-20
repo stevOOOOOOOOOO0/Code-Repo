@@ -9,6 +9,8 @@ public class DashMovement : MonoBehaviour
     private RaycastHit hit;
     private Vector3 moveDirection;
 
+    public float stamina;
+
     public void BaseMovement()
     {
         movementVector.Set(Input.GetAxis("Vertical") * .25f, 0, -Input.GetAxis("Horizontal") * .25f);
