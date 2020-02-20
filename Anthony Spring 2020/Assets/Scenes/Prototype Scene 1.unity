@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657844, g: 0.49641222, b: 0.57481694, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -218,6 +218,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Controller: {fileID: 0}
+  stamina: 0
 --- !u!1001 &78944341
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -482,6 +483,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Controller: {fileID: 0}
+  stamina: 0
 --- !u!1 &391652850
 GameObject:
   m_ObjectHideFlags: 0
@@ -680,6 +682,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Controller: {fileID: 0}
+  stamina: 0
 --- !u!1 &626830696
 GameObject:
   m_ObjectHideFlags: 0
@@ -739,6 +742,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Controller: {fileID: 626830703}
+  stamina: 0
 --- !u!136 &626830699
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -1091,6 +1095,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Controller: {fileID: 766185229}
+  stamina: 0
 --- !u!143 &766185229
 CharacterController:
   m_ObjectHideFlags: 0
@@ -1296,6 +1301,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Controller: {fileID: 0}
+  stamina: 0
 --- !u!1 &994413901
 GameObject:
   m_ObjectHideFlags: 0
@@ -1402,6 +1408,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Controller: {fileID: 0}
+  stamina: 0
 --- !u!1001 &1066136674
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1587,6 +1594,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Controller: {fileID: 0}
+  stamina: 0
 --- !u!1 &1288734658
 GameObject:
   m_ObjectHideFlags: 0
@@ -1693,6 +1701,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Controller: {fileID: 0}
+  stamina: 0
 --- !u!1 &1668868202
 GameObject:
   m_ObjectHideFlags: 0
@@ -2034,7 +2043,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   FollowMe: {fileID: 626830702}
-  Offset: {x: 0, y: 20, z: 20}
+  Offset: {x: 0, y: 40, z: 40}
   Smoothness: 0.1
   Following: 1
 --- !u!114 &1876273431
@@ -2293,3 +2302,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Controller: {fileID: 0}
+  stamina: 0
