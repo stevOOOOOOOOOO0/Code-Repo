@@ -28,4 +28,9 @@ public class Follow : MonoBehaviour
     {
         Following = false;
     }
+    
+    public void AddZOffset(float ZOffset)
+    {
+        Offset.Set(Offset.x, Offset.y, Offset.z + ZOffset);
+    }
 }

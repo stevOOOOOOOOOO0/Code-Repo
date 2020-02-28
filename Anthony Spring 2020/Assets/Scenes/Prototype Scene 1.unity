@@ -1007,6 +1007,28 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1876273430}
+        m_MethodName: StopFollowing
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1876273429}
+        m_MethodName: StopLooking
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
   MouseDown:
@@ -1750,6 +1772,11 @@ MonoBehaviour:
         m_CallState: 2
     m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
+  OnTriggerExitEvent:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
 --- !u!65 &1668868204
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2009,7 +2036,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1876273425}
   m_LocalRotation: {x: 0, y: 0.9659258, z: -0.2588191, w: 0}
-  m_LocalPosition: {x: 0, y: 15, z: 15}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -2043,7 +2070,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   FollowMe: {fileID: 626830702}
-  Offset: {x: 0, y: 40, z: 40}
+  Offset: {x: 0, y: 15, z: 30}
   Smoothness: 0.1
   Following: 1
 --- !u!114 &1876273431
@@ -2070,29 +2097,7 @@ MonoBehaviour:
       Culture=neutral, PublicKeyToken=null
   MouseClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1876273430}
-        m_MethodName: StopFollowing
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 1876273429}
-        m_MethodName: StopLooking
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
     m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
   MouseDown:
@@ -2140,7 +2145,7 @@ GameObject:
   - component: {fileID: 1919080371}
   - component: {fileID: 1919080370}
   - component: {fileID: 1919080369}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Cylinder
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2154,13 +2159,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1919080367}
-  m_LocalRotation: {x: -0, y: -0, z: -0.7542825, w: 0.65655}
-  m_LocalPosition: {x: 1.39, y: -0.3, z: 0}
+  m_LocalRotation: {x: -0.054883774, y: 0.06303442, z: 0.75144225, w: -0.6544838}
+  m_LocalPosition: {x: 1.4660865, y: -0.3152173, z: 0.12934703}
   m_LocalScale: {x: 0.1075063, y: 0.79776263, z: 0.1075063}
   m_Children: []
   m_Father: {fileID: 1844305129}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: -1.2726722, y: -9.242425, z: -97.765594}
+  m_LocalEulerAnglesHint: {x: 360, y: 0, z: -97.925}
 --- !u!95 &1919080369
 Animator:
   serializedVersion: 3

@@ -9,11 +9,11 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Assets/Scripts/DashMovement.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="420">
+            <state relative-caret-position="360">
               <caret line="28" column="5" selection-start-line="28" selection-start-column="5" selection-end-line="28" selection-end-column="5" />
               <folding>
                 <marker date="1582180798197" expanded="true" signature="6:55" ph="..." />
@@ -26,16 +26,49 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Assets/Scripts/FloatData.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="315">
-              <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
+            <state relative-caret-position="255">
+              <caret line="21" selection-start-line="21" selection-end-line="21" />
               <folding>
                 <marker date="1582181283496" expanded="true" signature="61:318" ph="{...}" />
                 <marker date="1582181283496" expanded="true" signature="127:163" ph="{...}" />
                 <marker date="1582181283496" expanded="true" signature="200:237" ph="{...}" />
                 <marker date="1582181283496" expanded="true" signature="279:316" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Assets/Scripts/Follow.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="450">
+              <caret line="30" column="4" selection-start-line="30" selection-start-column="4" selection-end-line="30" selection-end-column="4" />
+              <folding>
+                <marker date="1582609417548" expanded="true" signature="6:78" ph="..." />
+                <marker date="1582609417548" expanded="true" signature="115:768" ph="{...}" />
+                <marker date="1582609417548" expanded="true" signature="294:503" ph="{...}" />
+                <marker date="1582609417548" expanded="true" signature="323:497" ph="{...}" />
+                <marker date="1582609417548" expanded="true" signature="537:575" ph="{...}" />
+                <marker date="1582609417548" expanded="true" signature="608:647" ph="{...}" />
+                <marker date="1582609417548" expanded="true" signature="694:766" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Assets/Scripts/TriggerEvent.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="255">
+              <caret line="21" selection-start-line="21" selection-end-line="21" />
+              <folding>
+                <marker date="1582609592182" expanded="false" signature="6:118" ph="..." />
+                <marker date="1582609592182" expanded="true" signature="161:429" ph="{...}" />
+                <marker date="1582609592182" expanded="true" signature="280:330" ph="{...}" />
+                <marker date="1582609592182" expanded="true" signature="378:427" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -90,18 +123,18 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/MoveOverTime.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Debugger.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/LookAt.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Follow.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/TriggerEvent.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/NavMeshAgentBehavior.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/AfterImagesSOPrototype.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/DashMovement.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/FloatData.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Follow.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/TriggerEvent.cs" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-1803" />
-    <option name="y" value="-25" />
+    <option name="x" value="-176" />
+    <option name="y" value="-16" />
     <option name="width" value="1812" />
     <option name="height" value="1096" />
   </component>
@@ -182,11 +215,12 @@
       <workItem from="1582007544282" duration="1017000" />
       <workItem from="1582056125863" duration="2284000" />
       <workItem from="1582180573381" duration="720000" />
+      <workItem from="1582609235194" duration="468000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="720000" />
+    <option name="totallyTimeSpent" value="1188000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -198,20 +232,11 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-1928" y="-8" width="1874" height="1096" extended-state="6" />
+    <frame x="-8" y="-8" width="1843" height="1096" extended-state="6" />
     <layout>
-      <window_info id="Favorites" side_tool="true" />
       <window_info content_ui="combo" id="Project" order="0" weight="0.25" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="NuGet" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Unity" />
-      <window_info anchor="bottom" id="Database Changes" />
-      <window_info anchor="bottom" id="Version Control" />
-      <window_info anchor="bottom" id="Unit Tests" />
-      <window_info anchor="bottom" id="Terminal" />
-      <window_info anchor="bottom" id="Event Log" side_tool="true" />
-      <window_info anchor="bottom" id="Performance Profiler" />
+      <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" />
@@ -219,12 +244,21 @@
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="right" id="Errors In Solution" />
-      <window_info anchor="right" id="Database" />
-      <window_info anchor="right" id="Unit Tests Coverage" />
+      <window_info anchor="bottom" id="NuGet" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Performance Profiler" order="8" />
+      <window_info anchor="bottom" id="Docker" order="9" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="10" />
+      <window_info anchor="bottom" id="Unity" order="11" />
+      <window_info anchor="bottom" id="Database Changes" order="12" />
+      <window_info anchor="bottom" id="Unit Tests" order="13" />
+      <window_info anchor="bottom" id="Terminal" order="14" />
+      <window_info anchor="bottom" id="Event Log" order="15" side_tool="true" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Errors In Solution" order="3" />
+      <window_info anchor="right" id="Database" order="4" />
+      <window_info anchor="right" id="Unit Tests Coverage" order="5" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -287,7 +321,7 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/DashMovement.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
+        <state relative-caret-position="360">
           <caret line="28" column="5" selection-start-line="28" selection-start-column="5" selection-end-line="28" selection-end-column="5" />
           <folding>
             <marker date="1582180798197" expanded="true" signature="6:55" ph="..." />
@@ -301,13 +335,42 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/FloatData.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
+        <state relative-caret-position="255">
+          <caret line="21" selection-start-line="21" selection-end-line="21" />
           <folding>
             <marker date="1582181283496" expanded="true" signature="61:318" ph="{...}" />
             <marker date="1582181283496" expanded="true" signature="127:163" ph="{...}" />
             <marker date="1582181283496" expanded="true" signature="200:237" ph="{...}" />
             <marker date="1582181283496" expanded="true" signature="279:316" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Follow.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="30" column="4" selection-start-line="30" selection-start-column="4" selection-end-line="30" selection-end-column="4" />
+          <folding>
+            <marker date="1582609417548" expanded="true" signature="6:78" ph="..." />
+            <marker date="1582609417548" expanded="true" signature="115:768" ph="{...}" />
+            <marker date="1582609417548" expanded="true" signature="294:503" ph="{...}" />
+            <marker date="1582609417548" expanded="true" signature="323:497" ph="{...}" />
+            <marker date="1582609417548" expanded="true" signature="537:575" ph="{...}" />
+            <marker date="1582609417548" expanded="true" signature="608:647" ph="{...}" />
+            <marker date="1582609417548" expanded="true" signature="694:766" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/TriggerEvent.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="21" selection-start-line="21" selection-end-line="21" />
+          <folding>
+            <marker date="1582609592182" expanded="false" signature="6:118" ph="..." />
+            <marker date="1582609592182" expanded="true" signature="161:429" ph="{...}" />
+            <marker date="1582609592182" expanded="true" signature="280:330" ph="{...}" />
+            <marker date="1582609592182" expanded="true" signature="378:427" ph="{...}" />
           </folding>
         </state>
       </provider>
