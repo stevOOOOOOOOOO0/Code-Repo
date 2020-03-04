@@ -12,12 +12,15 @@ public class CharacterControllerMovements : MonoBehaviour
     public Rigidbody rotator;
     public Vector3 Movement, Rotation;
 
+    //public void Start()
+    //{
+    //}
+
     public void Update()
     {
         if (Movement.y > -9.8f)
             Movement += (Vector3.down * (9.8f * Time.deltaTime));
         Controller.Move(Movement * Time.deltaTime);
-        rotator.AddTorque(Rotation);
     }
 
     public void Jump()
@@ -27,6 +30,7 @@ public class CharacterControllerMovements : MonoBehaviour
 
     public void AddRoll()
     {
-        Rotation.Set(Random.Range(0,10), Random.Range(0,10), Random.Range(0,10));
+        Rotation.Set(Random.Range(-100,100), Random.Range(-100,100), Random.Range(-100,100));
+        rotator.AddTorque(Rotation);
     }
 }
