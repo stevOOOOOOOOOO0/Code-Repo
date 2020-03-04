@@ -10,7 +10,11 @@
       <e p="Assets" t="Include">
         <e p="Dice" t="Include">
           <e p="CharacterControllerMovements.cs" t="Include" />
+          <e p="CreateExplosionForce.cs" t="Include" />
+          <e p="FindClickLocation.cs" t="Include" />
+          <e p="Tremble.cs" t="Include" />
           <e p="UnityEventTriggers.cs" t="Include" />
+          <e p="Vector3Data.cs" t="Include" />
         </e>
         <e p="Scripts" t="Include">
           <e p="AfterImagesSOPrototype.cs" t="Include" />
