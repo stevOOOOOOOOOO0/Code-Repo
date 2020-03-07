@@ -11,7 +11,11 @@
         <e p="Dice" t="Include">
           <e p="CharacterControllerMovements.cs" t="Include" />
           <e p="CreateExplosionForce.cs" t="Include" />
+          <e p="EditString.cs" t="Include" />
           <e p="FindClickLocation.cs" t="Include" />
+          <e p="GroundedTriggerEnter.cs" t="Include" />
+          <e p="QuaternionData.cs" t="Include" />
+          <e p="StringData.cs" t="Include" />
           <e p="Tremble.cs" t="Include" />
           <e p="UnityEventTriggers.cs" t="Include" />
           <e p="Vector3Data.cs" t="Include" />
