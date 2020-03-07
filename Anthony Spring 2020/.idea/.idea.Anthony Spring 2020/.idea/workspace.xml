@@ -73,7 +73,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Assets/Dice/CharacterControllerMovements.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
+            <state relative-caret-position="15">
               <caret line="25" column="1" selection-start-line="25" selection-start-column="1" selection-end-line="25" selection-end-column="1" />
               <folding>
                 <marker date="1583305262757" expanded="true" signature="6:53" ph="..." />
@@ -102,16 +102,16 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Assets/Dice/GroundedTriggerEnter.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
-              <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
+            <state relative-caret-position="210">
+              <caret line="14" column="9" selection-start-line="14" selection-start-column="9" selection-end-line="14" selection-end-column="9" />
               <folding>
-                <marker date="1583562732706" expanded="true" signature="6:118" ph="..." />
-                <marker date="1583562732706" expanded="true" signature="169:385" ph="{...}" />
-                <marker date="1583562732706" expanded="true" signature="283:383" ph="{...}" />
-                <marker date="1583562732706" expanded="true" signature="322:377" ph="{...}" />
+                <marker date="1583563216844" expanded="true" signature="6:118" ph="..." />
+                <marker date="1583563216844" expanded="true" signature="169:421" ph="{...}" />
+                <marker date="1583563216844" expanded="true" signature="283:419" ph="{...}" />
+                <marker date="1583563216844" expanded="true" signature="322:413" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -121,7 +121,7 @@
         <entry file="file://$PROJECT_DIR$/Assets/Dice/EditString.cs">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="210">
-              <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
+              <caret line="14" selection-start-line="14" selection-end-line="14" />
               <folding>
                 <marker date="1583562610372" expanded="true" signature="59:198" ph="{...}" />
                 <marker date="1583562610372" expanded="true" signature="144:194" ph="{...}" />
@@ -130,14 +130,15 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Assets/Dice/StringData.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="7" column="1" lean-forward="true" selection-start-line="7" selection-start-column="1" selection-end-line="7" selection-end-column="1" />
+            <state relative-caret-position="150">
+              <caret line="10" column="21" selection-start-line="10" selection-start-column="21" selection-end-line="10" selection-end-column="21" />
               <folding>
-                <marker date="1583562572734" expanded="true" signature="6:32" ph="..." />
-                <marker date="1583562572734" expanded="true" signature="94:123" ph="{...}" />
+                <marker date="1583564508643" expanded="true" signature="6:32" ph="..." />
+                <marker date="1583564508643" expanded="true" signature="94:198" ph="{...}" />
+                <marker date="1583564508643" expanded="true" signature="162:196" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -224,9 +225,9 @@
         <option value="$PROJECT_DIR$/Assets/Dice/Tremble.cs" />
         <option value="$PROJECT_DIR$/Assets/Dice/QuaternionData.cs" />
         <option value="$PROJECT_DIR$/Assets/Dice/GetRotationVector.cs" />
-        <option value="$PROJECT_DIR$/Assets/Dice/StringData.cs" />
         <option value="$PROJECT_DIR$/Assets/Dice/EditString.cs" />
         <option value="$PROJECT_DIR$/Assets/Dice/GroundedTriggerEnter.cs" />
+        <option value="$PROJECT_DIR$/Assets/Dice/StringData.cs" />
       </list>
     </option>
   </component>
@@ -315,12 +316,12 @@
       <workItem from="1582180573381" duration="720000" />
       <workItem from="1582609235194" duration="468000" />
       <workItem from="1583302882202" duration="4213000" />
-      <workItem from="1583561711643" duration="1120000" />
+      <workItem from="1583561711643" duration="2589000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="6521000" />
+    <option name="totallyTimeSpent" value="7990000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -333,7 +334,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-1928" y="-8" width="1874" height="1096" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" weight="0.25" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -505,7 +505,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Assets/Dice/CharacterControllerMovements.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
+        <state relative-caret-position="15">
           <caret line="25" column="1" selection-start-line="25" selection-start-column="1" selection-end-line="25" selection-end-column="1" />
           <folding>
             <marker date="1583305262757" expanded="true" signature="6:53" ph="..." />
@@ -561,7 +561,7 @@
     <entry file="file://$PROJECT_DIR$/Assets/Dice/EditString.cs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="210">
-          <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
+          <caret line="14" selection-start-line="14" selection-end-line="14" />
           <folding>
             <marker date="1583562610372" expanded="true" signature="59:198" ph="{...}" />
             <marker date="1583562610372" expanded="true" signature="144:194" ph="{...}" />
@@ -569,26 +569,27 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Dice/StringData.cs">
+    <entry file="file://$PROJECT_DIR$/Assets/Dice/GroundedTriggerEnter.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="1" lean-forward="true" selection-start-line="7" selection-start-column="1" selection-end-line="7" selection-end-column="1" />
+        <state relative-caret-position="210">
+          <caret line="14" column="9" selection-start-line="14" selection-start-column="9" selection-end-line="14" selection-end-column="9" />
           <folding>
-            <marker date="1583562572734" expanded="true" signature="6:32" ph="..." />
-            <marker date="1583562572734" expanded="true" signature="94:123" ph="{...}" />
+            <marker date="1583563216844" expanded="true" signature="6:118" ph="..." />
+            <marker date="1583563216844" expanded="true" signature="169:421" ph="{...}" />
+            <marker date="1583563216844" expanded="true" signature="283:419" ph="{...}" />
+            <marker date="1583563216844" expanded="true" signature="322:413" ph="{...}" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Dice/GroundedTriggerEnter.cs">
+    <entry file="file://$PROJECT_DIR$/Assets/Dice/StringData.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
+        <state relative-caret-position="150">
+          <caret line="10" column="21" selection-start-line="10" selection-start-column="21" selection-end-line="10" selection-end-column="21" />
           <folding>
-            <marker date="1583562732706" expanded="true" signature="6:118" ph="..." />
-            <marker date="1583562732706" expanded="true" signature="169:385" ph="{...}" />
-            <marker date="1583562732706" expanded="true" signature="283:383" ph="{...}" />
-            <marker date="1583562732706" expanded="true" signature="322:377" ph="{...}" />
+            <marker date="1583564508643" expanded="true" signature="6:32" ph="..." />
+            <marker date="1583564508643" expanded="true" signature="94:198" ph="{...}" />
+            <marker date="1583564508643" expanded="true" signature="162:196" ph="{...}" />
           </folding>
         </state>
       </provider>

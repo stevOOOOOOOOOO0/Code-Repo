@@ -15,6 +15,7 @@ public class GroundedTriggerEnter : MonoBehaviour
         if (ParentCC.isGrounded)
         {
             TriggerEvent.Invoke();
+            Debug.Log("triggered");
         }
     }
 }
