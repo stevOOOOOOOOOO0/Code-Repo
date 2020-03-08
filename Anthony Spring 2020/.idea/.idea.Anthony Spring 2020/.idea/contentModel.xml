@@ -9,6 +9,7 @@
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
       <e p="Assets" t="Include">
         <e p="Dice" t="Include">
+          <e p="ChangeUIText.cs" t="Include" />
           <e p="CharacterControllerMovements.cs" t="Include" />
           <e p="CreateExplosionForce.cs" t="Include" />
           <e p="EditString.cs" t="Include" />
