@@ -10,22 +10,22 @@ public class MatchIdBehaviour : IdBehaviour
     public struct possibleMatch
     {
         public NameId nameIdObj;
-        public UnityEvent workEvent;
+        public UnityEvent workEvent, TriggerExitEvent;
     }
 
     public List<possibleMatch> nameIdList;
     [SerializeField]
     public Dictionary<NameId, UnityEvent> nameIdDictionary;
-   
-   
+
     private NameId otherIdObj;
+    private IdBehaviour otherBehaviourObj;
    
     private void OnTriggerEnter(Collider other)
     {
-        var nameId = other.GetComponent<IdBehaviour>().nameIdObj;
-        if (nameId == null) return;
-      
-        otherIdObj = nameId;
+        otherBehaviourObj = other.GetComponent<IdBehaviour>();
+        if (otherBehaviourObj == null) return;
+
+        otherIdObj = otherBehaviourObj.nameIdObj;
         CheckId();
     }
 
@@ -36,6 +36,26 @@ public class MatchIdBehaviour : IdBehaviour
             if (otherIdObj == obj.nameIdObj)
             {
                 obj.workEvent.Invoke();
+            }
+        }
+    }
+
+    private void OnTriggerExit(Collider other)
+    {
+        otherBehaviourObj = other.GetComponent<IdBehaviour>();
+        if (otherBehaviourObj == null) return;
+
+        otherIdObj = otherBehaviourObj.nameIdObj;
+        CheckIdExit();
+    }
+
+    private void CheckIdExit()
+    {
+        foreach (var obj in nameIdList)
+        {
+            if (otherIdObj == obj.nameIdObj)
+            {
+                obj.TriggerExitEvent.Invoke();
             }
         }
     }
