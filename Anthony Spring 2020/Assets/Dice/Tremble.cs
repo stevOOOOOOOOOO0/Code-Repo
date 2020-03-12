@@ -7,7 +7,8 @@ public class Tremble : MonoBehaviour
 {
 
     public Vector3 Movement;
-    public float Shaking;
+    private float Shaking; 
+    public float ShakingInitial;
 
 
     public void startCoroutine()
@@ -17,7 +18,7 @@ public class Tremble : MonoBehaviour
 
     private IEnumerator Trembling()
     {
-        Shaking = 3;
+        Shaking = ShakingInitial;
         while (Shaking > 0)
         {
             Movement.Set(Random.Range(-2, 2), Random.Range(-2, 2), Random.Range(-2, 2));

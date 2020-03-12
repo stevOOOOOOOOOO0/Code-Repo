@@ -11,19 +11,19 @@ public class CharacterControllerMovement : MonoBehaviour
     public void JumpToHeight(float Height)
     {
         movementVector.Set(0f, Height, 0f);
-        Controller.Move(movementVector);
+        Controller.Move(movementVector * Time.deltaTime);
     }
 
     public void MoveX(float xValue)
     {
         movementVector.Set(xValue, 0f, 0f);
-        Controller.Move(movementVector);
+        Controller.Move(movementVector * Time.deltaTime);
     }
     
     public void MoveY(float zValue)
     {
         movementVector.Set(0f, 0f, zValue);
-        Controller.Move(movementVector);
+        Controller.Move(movementVector * Time.deltaTime);
     }
 
     public void Update()
@@ -32,11 +32,11 @@ public class CharacterControllerMovement : MonoBehaviour
         {
             direction = transform.position - Destination.position;
             direction *= -1;
-            Controller.Move(direction.normalized * MovementMultiplier);
+            Controller.Move(direction.normalized * MovementMultiplier * Time.deltaTime);
         }
         
         movementVector.Set(0f, Gravity, 0f);
-        Controller.Move(movementVector);
+        Controller.Move(movementVector * Time.deltaTime);
     }
 
     public void SetDestination(Transform newDestination)
@@ -53,7 +53,7 @@ public class CharacterControllerMovement : MonoBehaviour
     {
         direction = transform.position - Destination.position;
         direction *= -1;
-        Controller.Move(direction);
+        Controller.Move(direction * Time.deltaTime);
     }
     
 }
