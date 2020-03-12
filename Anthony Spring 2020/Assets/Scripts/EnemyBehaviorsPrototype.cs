@@ -7,9 +7,20 @@ public class EnemyBehaviorsPrototype : MonoBehaviour
 {
 
     public UnityEvent OnHit;
+    public int health;
 
     public void InvokeOnHit()
     {
-        OnHit.Invoke();
+        SubtractHealth();
+        Debug.Log("in it");
+    }
+
+    public void SubtractHealth()
+    {
+        health -= 1;
+        if (health == 0)
+        {
+            OnHit.Invoke();
+        }
     }
 }

@@ -1,5 +1,4 @@
 ﻿using UnityEngine;
-using Vector3 = UnityEngine.Vector3;
 
 public class DashMovement : MonoBehaviour
 {
@@ -8,13 +7,11 @@ public class DashMovement : MonoBehaviour
     public CharacterController Controller;
     private RaycastHit hit;
     private Vector3 moveDirection;
-    public int VerticalChange, HorizontalChange;
-
-    public float stamina;
+    public float VerticalChange, HorizontalChange, YValue;
 
     public void BaseMovement()
     {
-        movementVector.Set(Input.GetAxis("Vertical") * .25f * VerticalChange, 0, -Input.GetAxis("Horizontal") * .25f * HorizontalChange);
+        movementVector.Set(Input.GetAxis("Vertical") * .25f * VerticalChange, YValue, -Input.GetAxis("Horizontal") * .25f * HorizontalChange);
         Controller.Move(movementVector);
     }
 
@@ -27,5 +24,10 @@ public class DashMovement : MonoBehaviour
             moveDirection.Set(moveDirection.x, 0, moveDirection.z);
             Controller.Move(moveDirection);
         }
+    }
+
+    public void SetGravity(int newGravity)
+    {
+        YValue = newGravity;
     }
 }

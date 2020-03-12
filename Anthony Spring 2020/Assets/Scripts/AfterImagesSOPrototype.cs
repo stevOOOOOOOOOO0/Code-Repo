@@ -74,6 +74,7 @@ public class AfterImagesSOPrototype : ScriptableObject
                 if (hit.collider.gameObject.layer == 9)
                 {
                     hit.collider.gameObject.GetComponent<EnemyBehaviorsPrototype>().InvokeOnHit();
+                    Debug.Log("NUTTTTTTT");
                 }
             }
         }
