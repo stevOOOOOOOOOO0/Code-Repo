@@ -20,11 +20,11 @@ public class TimerEvent : MonoBehaviour
     void Update()
     {
         Time -= 1 * UnityEngine.Time.deltaTime;
-        if (Time < 0)
-        {
-            ZeroEvent.Invoke();
-            Time = SetTime;
-        }
+            if (Time < 0)
+            {
+                ZeroEvent.Invoke();
+                Time = SetTime;
+            }
     }
 
     public void SetTimer(float newTime)

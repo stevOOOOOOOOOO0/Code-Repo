@@ -24,6 +24,7 @@
         <e p="Scripts" t="Include">
           <e p="AfterImagesSOPrototype.cs" t="Include" />
           <e p="BoolData.cs" t="Include" />
+          <e p="ChangeMaterial.cs" t="Include" />
           <e p="ChangeTimeScale.cs" t="Include" />
           <e p="CharacterControllerKnockBack.cs" t="Include" />
           <e p="CharacterControllerMovement.cs" t="Include" />
@@ -37,6 +38,8 @@
           <e p="GameAction.cs" t="Include" />
           <e p="GameActionHandler.cs" t="Include" />
           <e p="IdBehaviour.cs" t="Include" />
+          <e p="IfAllTrueThen.cs" t="Include" />
+          <e p="IfTrueThen.cs" t="Include" />
           <e p="KnockBack.cs" t="Include" />
           <e p="LookAt.cs" t="Include" />
           <e p="MatchIdBehaviour.cs" t="Include" />

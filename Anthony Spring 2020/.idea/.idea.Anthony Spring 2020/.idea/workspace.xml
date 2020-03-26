@@ -19,6 +19,9 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/TriggerEvent.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/GameActionHandler.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/CharacterControllerKnockBack.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/ChangeMaterial.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/MatchIdBehaviour.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/IfAllTrueThen.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/BoolData.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/TimerEvent.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/DisableObjectCoroutine.cs" root0="FORCE_HIGHLIGHTING" />
@@ -28,6 +31,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/OnMouseClickUnityEvent.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/KnockBack.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/MoveOverTime.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/IfTrueThen.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/LookAt.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Dice/CreateExplosionForce.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/AfterImagesSOPrototype.cs" root0="FORCE_HIGHLIGHTING" />
@@ -36,6 +40,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/NavMeshComponents/Scripts/NavMeshSurface.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Dice/EditString.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Dice/StringData.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/IdBehaviour.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/ChangeTimeScale.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/GameAction.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/CheckForZeroFloatData.cs" root0="FORCE_HIGHLIGHTING" />
@@ -49,9 +54,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Assets/Shader/ToonComplete.shader" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/CreateAtLocation.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/ActivateAtLocation.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/GameObjectListSO.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/CharacterMovement.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/DisableAfterTime.cs" />
@@ -87,7 +89,6 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/IDBehavior.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/MatchIdBehaviour.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Jump.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/TimerEvent.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/FloatData.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/DisableObjectCoroutine.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/CheckForZeroFloatData.cs" />
@@ -96,10 +97,14 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/CharacterControllerMovement.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/AfterImagesSOPrototype.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/BoolData.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/EnemyBehaviorsPrototype.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/KnockBack.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/DashMovement.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/CharacterControllerKnockBack.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/IfTrueThen.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/ChangeMaterial.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/TimerEvent.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/EnemyBehaviorsPrototype.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/IfAllTrueThen.cs" />
       </list>
     </option>
   </component>
@@ -176,6 +181,7 @@
       <workItem from="1583975791942" duration="10809000" />
       <workItem from="1584034271067" duration="2534000" />
       <workItem from="1585067556594" duration="22172000" />
+      <workItem from="1585239560254" duration="6438000" />
     </task>
     <servers />
   </component>
@@ -216,10 +222,10 @@
     <state x="445" y="161" key="SettingsEditor/1920.1080" timestamp="1585176787647" />
     <state x="616" y="240" key="run.anything.popup" timestamp="1585176787647" />
     <state x="616" y="240" key="run.anything.popup/1920.1080" timestamp="1585176787647" />
-    <state x="623" y="225" key="search.everywhere.popup" timestamp="1585176788942">
+    <state x="623" y="225" key="search.everywhere.popup" timestamp="1585242770271">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="623" y="225" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1585176788942" />
+    <state x="623" y="225" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1585242770271" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

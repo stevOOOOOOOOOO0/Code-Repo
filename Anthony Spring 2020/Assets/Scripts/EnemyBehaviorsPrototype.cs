@@ -18,7 +18,7 @@ public class EnemyBehaviorsPrototype : MonoBehaviour
     public void SubtractHealth()
     {
         health -= 1;
-        if (health == 0)
+        if (health <= 0)
         {
             if (usingSword.Value)
                 SwordOnHit.Invoke();
