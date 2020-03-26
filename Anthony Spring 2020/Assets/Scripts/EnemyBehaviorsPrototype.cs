@@ -6,13 +6,13 @@ using UnityEngine.Events;
 public class EnemyBehaviorsPrototype : MonoBehaviour
 {
 
-    public UnityEvent OnHit;
+    public UnityEvent SwordOnHit, ShieldOnHit;
     public int health;
+    public BoolData usingSword;
 
     public void InvokeOnHit()
     {
         SubtractHealth();
-        Debug.Log("in it");
     }
 
     public void SubtractHealth()
@@ -20,7 +20,10 @@ public class EnemyBehaviorsPrototype : MonoBehaviour
         health -= 1;
         if (health == 0)
         {
-            OnHit.Invoke();
+            if (usingSword.Value)
+                SwordOnHit.Invoke();
         }
+        if (usingSword.Value == false)
+            ShieldOnHit.Invoke();
     }
 }

@@ -13,11 +13,6 @@ MonoBehaviour:
   m_Name: After Images SO Prototype
   m_EditorClassIdentifier: 
   Base: {fileID: 9045644875311041986, guid: 322dfd2d2f967cf4b9b026a44368a313, type: 3}
-  AfterImages: []
-  AfterImagesActive:
+  AfterImages:
   - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  Location: {fileID: 0}
+  AfterImagesActive: []

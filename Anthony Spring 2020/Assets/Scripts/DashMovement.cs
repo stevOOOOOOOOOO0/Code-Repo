@@ -1,29 +1,73 @@
-﻿using UnityEngine;
+﻿using System;
+using UnityEngine;
 
 public class DashMovement : MonoBehaviour
 {
 
-    private Vector3 movementVector, newPosition;
+    private Vector3 movementVector, newPosition, oldPosition, BaseMovementOldPosition;
     public CharacterController Controller;
     private RaycastHit hit;
     private Vector3 moveDirection;
-    public float VerticalChange, HorizontalChange, YValue;
+    public float VerticalChange, HorizontalChange, YValue, MaxMoveDistance;
+    private bool Looking;
+    public BoolData CanMove;
+    
+    
 
     public void BaseMovement()
     {
-        movementVector.Set(Input.GetAxis("Vertical") * .25f * VerticalChange, YValue, -Input.GetAxis("Horizontal") * .25f * HorizontalChange);
-        Controller.Move(movementVector);
+        if (CanMove.Value)
+        {
+            movementVector.Set(Input.GetAxis("Vertical") * .25f * VerticalChange, YValue, -Input.GetAxis("Horizontal") * .25f * HorizontalChange);
+            Controller.Move(movementVector);
+            if (Looking == false)
+            {
+                if (Input.GetAxis("Vertical") != 0 || Input.GetAxis("Horizontal") != 0)
+                {
+                    transform.forward = new Vector3(movementVector.x, 0, movementVector.z);
+                }
+            }
+
+            Looking = false;
+        }
     }
 
     public void CharacterControllerMoveToClick()
     {
-        if (Physics.Raycast(Camera.main.ScreenPointToRay(Input.mousePosition), out hit))
+        if (CanMove.Value)
         {
-            moveDirection = hit.point - transform.position;
-            moveDirection -= Vector3.forward * 1;
-            moveDirection.Set(moveDirection.x, 0, moveDirection.z);
-            Controller.Move(moveDirection);
+            if (Physics.Raycast(Camera.main.ScreenPointToRay(Input.mousePosition), out hit))
+            {
+                Looking = true;
+                //set the original position before you start all of these
+                //set the range of the movement depending on the distance of the mouse
+                if (Vector3.Distance(oldPosition, hit.point) > MaxMoveDistance)
+                {
+                    moveDirection = Vector3.Lerp(oldPosition, hit.point, MaxMoveDistance / Vector3.Distance(oldPosition, hit.point));
+                    moveDirection = moveDirection - transform.position;
+                    moveDirection -= Vector3.forward * 1;
+                    moveDirection.Set(moveDirection.x, 0, moveDirection.z);
+                }
+                else
+                {
+                    moveDirection = hit.point - transform.position;
+                    moveDirection -= Vector3.forward * 1;
+                    moveDirection.Set(moveDirection.x, 0, moveDirection.z);
+                }
+
+                Controller.Move(moveDirection);
+                moveDirection = transform.position - oldPosition;
+                transform.forward = new Vector3(moveDirection.x, 0, moveDirection.z);
+                // moveDirection = transform.position;
+                // moveDirection.y += 180;
+                // transform.forward = new Vector3(moveDirection.x, 0 , moveDirection.z);
+            }
         }
+    }
+
+    public void SetOldPosition()
+    {
+        oldPosition = transform.position;
     }
 
     public void SetGravity(int newGravity)

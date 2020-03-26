@@ -13,7 +13,6 @@ GameObject:
   - component: {fileID: 1919080371}
   - component: {fileID: 1919080370}
   - component: {fileID: 1919080369}
-  - component: {fileID: 1919080373}
   - component: {fileID: 1919080374}
   m_Layer: 9
   m_Name: Cylinder
@@ -114,28 +113,6 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &1919080373
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1919080367}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3d16f9c47d0ab9749b3c2863e7b85b58, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  OnTriggerEnterEvent:
-    m_PersistentCalls:
-      m_Calls: []
-    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
-      Culture=neutral, PublicKeyToken=null
-  OnTriggerExitEvent:
-    m_PersistentCalls:
-      m_Calls: []
-    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
-      Culture=neutral, PublicKeyToken=null
 --- !u!114 &1919080374
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -191,6 +168,7 @@ GameObject:
   - component: {fileID: 1844305120}
   - component: {fileID: 1844305121}
   - component: {fileID: 1844305130}
+  - component: {fileID: 1973468907}
   m_Layer: 9
   m_Name: SphereEnemyPrototype
   m_TagString: Untagged
@@ -283,7 +261,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1ae4d85674cfa1844b95f3ee88946709, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  OnHit:
+  SwordOnHit:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 269077614654696255}
@@ -310,6 +288,35 @@ MonoBehaviour:
         m_CallState: 2
     m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
+  ShieldOnHit:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1973468907}
+        m_MethodName: FindFinalPosition
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1973468907}
+        m_MethodName: Move
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  health: 1
+  usingSword: {fileID: 11400000, guid: 05d99354244e7314d988db4fa1d46f4d, type: 2}
 --- !u!114 &269077614654696255
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5071,3 +5078,19 @@ MonoBehaviour:
           m_CallState: 2
       m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
         Culture=neutral, PublicKeyToken=null
+--- !u!114 &1973468907
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 116290832315014973}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 191b22dc6c207c945a0f83b85f790745, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  transformForRelation: {fileID: 0}
+  offsetAmount: 5
+  speed: 10
+  canMove: 0

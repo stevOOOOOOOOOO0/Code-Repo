@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ContentModelStore">
-    <e p="C:\Users\10854794\.Rider2019.2\system\extResources" t="IncludeRecursive" />
-    <e p="C:\Users\10854794\.Rider2019.2\system\resharper-host\local\Transient\ReSharperHost\v192\SolutionCaches\_Anthony Spring 2020.-2019718039.00" t="ExcludeRecursive" />
-    <e p="C:\Users\10854794\Documents\School\Code-Repo\Anthony Spring 2020" t="IncludeRecursive">
+    <e p="C:\Users\stevO\.Rider2019.3\system\extResources" t="IncludeRecursive" />
+    <e p="C:\Users\stevO\.Rider2019.3\system\resharper-host\local\Transient\ReSharperHost\v193\SolutionCaches\_Anthony Spring 2020.1969786312.00" t="ExcludeRecursive" />
+    <e p="C:\Users\stevO\Documents\Repository\Code-Repo\Anthony Spring 2020" t="IncludeRecursive">
       <e p="Anthony Spring 2020.sln" t="IncludeFlat" />
       <e p="Assembly-CSharp-Editor.csproj" t="IncludeRecursive" />
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
@@ -23,7 +23,9 @@
         </e>
         <e p="Scripts" t="Include">
           <e p="AfterImagesSOPrototype.cs" t="Include" />
+          <e p="BoolData.cs" t="Include" />
           <e p="ChangeTimeScale.cs" t="Include" />
+          <e p="CharacterControllerKnockBack.cs" t="Include" />
           <e p="CharacterControllerMovement.cs" t="Include" />
           <e p="CheckForZeroFloatData.cs" t="Include" />
           <e p="DashMovement.cs" t="Include" />
@@ -35,6 +37,7 @@
           <e p="GameAction.cs" t="Include" />
           <e p="GameActionHandler.cs" t="Include" />
           <e p="IdBehaviour.cs" t="Include" />
+          <e p="KnockBack.cs" t="Include" />
           <e p="LookAt.cs" t="Include" />
           <e p="MatchIdBehaviour.cs" t="Include" />
           <e p="MoveOverTime.cs" t="Include" />
