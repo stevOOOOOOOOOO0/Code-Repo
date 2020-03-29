@@ -18,8 +18,17 @@ public class DashMovement : MonoBehaviour
     {
         if (CanMove.Value)
         {
-            movementVector.Set(Input.GetAxis("Vertical") * .25f * VerticalChange, YValue, -Input.GetAxis("Horizontal") * .25f * HorizontalChange);
-            Controller.Move(movementVector);
+            if (Controller.isGrounded)
+            {
+                YValue = -9.8f;
+            }
+            else
+            {
+                YValue += -80f * Time.deltaTime;
+            }
+            
+            movementVector.Set(Input.GetAxis("Vertical") * VerticalChange, YValue, Input.GetAxis("Horizontal") * HorizontalChange);
+            Controller.Move(movementVector * Time.deltaTime);
             if (Looking == false)
             {
                 if (Input.GetAxis("Vertical") != 0 || Input.GetAxis("Horizontal") != 0)
@@ -27,7 +36,6 @@ public class DashMovement : MonoBehaviour
                     transform.forward = new Vector3(movementVector.x, 0, movementVector.z);
                 }
             }
-
             Looking = false;
         }
     }
@@ -70,7 +78,7 @@ public class DashMovement : MonoBehaviour
         oldPosition = transform.position;
     }
 
-    public void SetGravity(int newGravity)
+    public void SetGravity(float newGravity)
     {
         YValue = newGravity;
     }

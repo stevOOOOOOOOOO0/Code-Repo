@@ -98,13 +98,13 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/AfterImagesSOPrototype.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/BoolData.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/KnockBack.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/DashMovement.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/CharacterControllerKnockBack.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/IfTrueThen.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/ChangeMaterial.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/TimerEvent.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/EnemyBehaviorsPrototype.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/IfAllTrueThen.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/DashMovement.cs" />
       </list>
     </option>
   </component>
@@ -182,6 +182,8 @@
       <workItem from="1584034271067" duration="2534000" />
       <workItem from="1585067556594" duration="22172000" />
       <workItem from="1585239560254" duration="6438000" />
+      <workItem from="1585455272435" duration="3306000" />
+      <workItem from="1585459567607" duration="853000" />
     </task>
     <servers />
   </component>
