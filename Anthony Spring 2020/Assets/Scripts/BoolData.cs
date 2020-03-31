@@ -16,4 +16,12 @@ public class BoolData : ScriptableObject
     {
         Value = false;
     }
+
+    public void SwitchValue()
+    {
+        if (Value)
+            Value = false;
+        else
+            Value = true;
+    }
 }

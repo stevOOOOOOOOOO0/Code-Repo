@@ -23,9 +23,11 @@
         </e>
         <e p="Scripts" t="Include">
           <e p="AfterImagesSOPrototype.cs" t="Include" />
+          <e p="BecomeChildOf.cs" t="Include" />
           <e p="BoolData.cs" t="Include" />
           <e p="ChangeMaterial.cs" t="Include" />
           <e p="ChangeTimeScale.cs" t="Include" />
+          <e p="CharacterControllerGravityOnly.cs" t="Include" />
           <e p="CharacterControllerKnockBack.cs" t="Include" />
           <e p="CharacterControllerMovement.cs" t="Include" />
           <e p="CheckForZeroFloatData.cs" t="Include" />
@@ -33,6 +35,7 @@
           <e p="Debugger.cs" t="Include" />
           <e p="DisableObjectCoroutine.cs" t="Include" />
           <e p="EnemyBehaviorsPrototype.cs" t="Include" />
+          <e p="EventInvokeBeforeAndAfterCoroutine.cs" t="Include" />
           <e p="FloatData.cs" t="Include" />
           <e p="Follow.cs" t="Include" />
           <e p="GameAction.cs" t="Include" />
@@ -62,7 +65,10 @@
             </e>
           </e>
           <e p="ObjectId.cs" t="Include" />
+          <e p="OnEnterKeyDown.cs" t="Include" />
           <e p="OnMouseClickUnityEvent.cs" t="Include" />
+          <e p="OnSpaceEvent.cs" t="Include" />
+          <e p="SetLocation.cs" t="Include" />
           <e p="TimerEvent.cs" t="Include" />
           <e p="TriggerEvent.cs" t="Include" />
           <e p="Unused scripts" t="Include">

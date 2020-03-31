@@ -16,4 +16,16 @@ public class ChangeMaterial : MonoBehaviour
     {
         gameObject.GetComponent<MeshRenderer>().material = InitialMaterial;
     }
+
+    public void StartColorDoubleSwapCoroutine(float time)
+    {
+        StartCoroutine(ColorDoubleSwapCoroutine(time));
+    }
+
+    public IEnumerator ColorDoubleSwapCoroutine(float time)
+    {
+        SwapToNewMaterial();
+        yield return new WaitForSeconds(time);
+        SwapToInitialMaterial();
+    }
 }

@@ -26,4 +26,9 @@ public class EnemyBehaviorsPrototype : MonoBehaviour
         if (usingSword.Value == false)
             ShieldOnHit.Invoke();
     }
+
+    public void AddHealth()
+    {
+        health += 1;
+    }
 }

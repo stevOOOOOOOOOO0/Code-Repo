@@ -25,7 +25,10 @@ public class KnockBack : MonoBehaviour
     public void Update()
     {
         if (canMove)
-            transform.position = Vector3.Lerp(transform.position, finalPosition, speed * Time.deltaTime);
+            transform.position = Vector3.Lerp(transform.position, finalPosition, speed);
+
+        if (Vector3.Distance(transform.position, finalPosition) < .1f)
+            canMove = false;
     }
 
     public void SetOffsetValue(float value)

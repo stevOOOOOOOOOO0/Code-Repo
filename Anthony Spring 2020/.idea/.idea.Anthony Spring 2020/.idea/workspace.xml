@@ -19,9 +19,14 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/TriggerEvent.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/GameActionHandler.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/CharacterControllerKnockBack.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/EventInvokeBeforeAndAfterCoroutine.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/ChangeMaterial.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/MatchIdBehaviour.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/SetLocation.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Debugger.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/IfAllTrueThen.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/OnSpaceEvent.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/OnEnterKeyDown.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/BoolData.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/TimerEvent.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/DisableObjectCoroutine.cs" root0="FORCE_HIGHLIGHTING" />
@@ -37,6 +42,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/AfterImagesSOPrototype.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Follow.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Dice/ChangeUIText.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/CharacterControllerGravityOnly.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/NavMeshComponents/Scripts/NavMeshSurface.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Dice/EditString.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Dice/StringData.cs" root0="FORCE_HIGHLIGHTING" />
@@ -45,6 +51,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/GameAction.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/CheckForZeroFloatData.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Dice/UnityEventTriggers.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/BecomeChildOf.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Dice/CharacterControllerMovements.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Dice/Tremble.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Dice/GroundedTriggerEnter.cs" root0="FORCE_HIGHLIGHTING" />
@@ -54,12 +61,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Assets/Scripts/GameObjectListSO.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/CharacterMovement.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/DisableAfterTime.cs" />
-        <option value="$PROJECT_DIR$/Assets/Dice/RigidBodyMovements.cs" />
-        <option value="$PROJECT_DIR$/Assets/Dice/UnityEventTriggers.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/OnMouseClickUnityEvent.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/TriggerEvents.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/AfterImagePrototype.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/GameActionHandler.cs" />
@@ -94,17 +95,23 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/CheckForZeroFloatData.cs" />
         <option value="$PROJECT_DIR$/Assets/Dice/Tremble.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/ChangeTimeScale.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/CharacterControllerMovement.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/AfterImagesSOPrototype.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/BoolData.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/KnockBack.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/CharacterControllerKnockBack.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/IfTrueThen.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/ChangeMaterial.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/TimerEvent.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/EnemyBehaviorsPrototype.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/IfAllTrueThen.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/BoolData.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/OnSpaceEvent.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/DashMovement.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/EnemyBehaviorsPrototype.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/ChangeMaterial.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/EventInvokeBeforeAndAfterCoroutine.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/OnEnterKeyDown.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/CharacterControllerMovement.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/CharacterControllerGravityOnly.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/BecomeChildOf.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/SetLocation.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/KnockBack.cs" />
       </list>
     </option>
   </component>
@@ -185,6 +192,7 @@
       <workItem from="1585455272435" duration="3306000" />
       <workItem from="1585459567607" duration="1316000" />
       <workItem from="1585514681235" duration="2331000" />
+      <workItem from="1585671112033" duration="15635000" />
     </task>
     <servers />
   </component>

@@ -54,21 +54,18 @@ public class DashMovement : MonoBehaviour
                     moveDirection = Vector3.Lerp(oldPosition, hit.point, MaxMoveDistance / Vector3.Distance(oldPosition, hit.point));
                     moveDirection = moveDirection - transform.position;
                     moveDirection -= Vector3.forward * 1;
-                    moveDirection.Set(moveDirection.x, 0, moveDirection.z);
+                    moveDirection.Set(moveDirection.x, -100f, moveDirection.z);
                 }
                 else
                 {
                     moveDirection = hit.point - transform.position;
                     moveDirection -= Vector3.forward * 1;
-                    moveDirection.Set(moveDirection.x, 0, moveDirection.z);
+                    moveDirection.Set(moveDirection.x, -100f, moveDirection.z);
                 }
 
                 Controller.Move(moveDirection);
                 moveDirection = transform.position - oldPosition;
                 transform.forward = new Vector3(moveDirection.x, 0, moveDirection.z);
-                // moveDirection = transform.position;
-                // moveDirection.y += 180;
-                // transform.forward = new Vector3(moveDirection.x, 0 , moveDirection.z);
             }
         }
     }
