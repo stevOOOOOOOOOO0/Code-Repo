@@ -34,6 +34,7 @@
           <e p="DashMovement.cs" t="Include" />
           <e p="Debugger.cs" t="Include" />
           <e p="DisableObjectCoroutine.cs" t="Include" />
+          <e p="Enabler.cs" t="Include" />
           <e p="EnemyBehaviorsPrototype.cs" t="Include" />
           <e p="EventInvokeBeforeAndAfterCoroutine.cs" t="Include" />
           <e p="FloatData.cs" t="Include" />
@@ -43,6 +44,7 @@
           <e p="IdBehaviour.cs" t="Include" />
           <e p="IfAllTrueThen.cs" t="Include" />
           <e p="IfTrueThen.cs" t="Include" />
+          <e p="ImageDisplay.cs" t="Include" />
           <e p="KnockBack.cs" t="Include" />
           <e p="LookAt.cs" t="Include" />
           <e p="MatchIdBehaviour.cs" t="Include" />
@@ -68,6 +70,7 @@
           <e p="OnEnterKeyDown.cs" t="Include" />
           <e p="OnMouseClickUnityEvent.cs" t="Include" />
           <e p="OnSpaceEvent.cs" t="Include" />
+          <e p="OnStartEvents.cs" t="Include" />
           <e p="SetLocation.cs" t="Include" />
           <e p="TimerEvent.cs" t="Include" />
           <e p="TriggerEvent.cs" t="Include" />

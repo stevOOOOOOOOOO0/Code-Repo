@@ -14,7 +14,6 @@ public class OnSpaceEvent : MonoBehaviour
         if (Input.GetKeyDown("space"))
         {
             onSpaceDownEvent.Invoke();
-            Debug.Log("space");
         }
     }
 }

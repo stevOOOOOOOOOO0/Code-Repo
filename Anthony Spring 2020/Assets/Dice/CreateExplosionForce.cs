@@ -19,7 +19,6 @@ public class CreateExplosionForce : MonoBehaviour
             if (rb != null)
             {
                 rb.AddExplosionForce(force, ExplosionLocation.Value, radius);
-                Debug.Log("Exploding???");
             }
         }
     }

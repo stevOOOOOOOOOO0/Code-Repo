@@ -10,7 +10,7 @@ public class OnEnterKeyDown : MonoBehaviour
     {
         if (Input.GetKeyDown("return"))
         {
-            Application.LoadLevel("Prototype Scene 1");
+            Application.LoadLevel("Official Scene");
         }
     }
 }
