@@ -1,0 +1,11 @@
+lava balls randomize the position of the fall a little bit
+
+work on getting some height variation in the frist section
+
+show rubble on the path coming up to the fountain
+
+Earthquakes on your way up to the fountain. dodge rocks and debris
+	possibly right after finishing the first puzzle causeing the boulders to 
+	fly towards you. pillars falling
+
+have the enemies jump out when the player gets close enough
