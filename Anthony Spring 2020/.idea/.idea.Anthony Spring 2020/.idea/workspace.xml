@@ -101,7 +101,6 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/IfAllTrueThen.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/BoolData.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/DashMovement.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/EnemyBehaviorsPrototype.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/ChangeMaterial.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/EventInvokeBeforeAndAfterCoroutine.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/CharacterControllerMovement.cs" />
@@ -115,6 +114,7 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/OnEnterKeyDown.cs" />
         <option value="$PROJECT_DIR$/Assets/Dice/CreateExplosionForce.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/OnSpaceEvent.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/EnemyBehaviorsPrototype.cs" />
       </list>
     </option>
   </component>
@@ -198,6 +198,7 @@
       <workItem from="1585671112033" duration="15635000" />
       <workItem from="1585854491925" duration="11901000" />
       <workItem from="1586039740963" duration="599000" />
+      <workItem from="1586561835337" duration="1832000" />
     </task>
     <servers />
   </component>
