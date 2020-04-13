@@ -13,23 +13,32 @@ public class ImageDisplay : MonoBehaviour
 
     public void Start()
     {
-        UIImages.Add(BaseImage);
-
-        for (int i = 1; i < Value.Value; i++)
-        {
-            UIImages.Add(Instantiate(BaseImage));
-            UIImages[UIImages.Count - 1].gameObject.transform.SetParent(canvas.transform, true);
-            UIImages[UIImages.Count - 1].gameObject.SetActive(true);
-            UIImages[UIImages.Count - 1].rectTransform.anchoredPosition = BaseImage.rectTransform.anchoredPosition + new Vector2(length * i, 0);
-        }
+        ResetImages();
     }
 
-    public void UpdateImages()
+    public void Update()
     {
         while (UIImages.Count > Value.Value)
         {
             Destroy(UIImages[UIImages.Count - 1]);
             UIImages.RemoveAt(UIImages.Count - 1);
+        }
+    }
+
+    public void ResetImages()
+    {
+        foreach (var VARIABLE in UIImages)
+        {
+            VARIABLE.gameObject.SetActive(false);
+        }
+        UIImages.Clear();
+
+        for (int i = 0; i < Value.Value; i++)
+        {
+            UIImages.Add(Instantiate(BaseImage));
+            UIImages[UIImages.Count - 1].gameObject.transform.SetParent(canvas.transform, true);
+            UIImages[UIImages.Count - 1].gameObject.SetActive(true);
+            UIImages[UIImages.Count - 1].rectTransform.anchoredPosition = BaseImage.rectTransform.anchoredPosition + new Vector2(length * i, 0);
         }
     }
 }

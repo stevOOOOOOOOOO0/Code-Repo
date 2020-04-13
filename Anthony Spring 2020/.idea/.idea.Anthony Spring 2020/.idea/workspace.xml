@@ -16,6 +16,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/Dice/FindClickLocation.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Dice/Vector3Data.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/CharacterControllerKnockBack.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/OnKeyDown.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/EventInvokeBeforeAndAfterCoroutine.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/IfAllTrueThen.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/OnEnterKeyDown.cs" root0="FORCE_HIGHLIGHTING" />
@@ -64,7 +65,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Assets/Scripts/GameAction.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/DisableCoroutine.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/CameraScripts/DisableAttributes.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/MoveOverTime.cs" />
@@ -100,7 +100,6 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/TimerEvent.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/IfAllTrueThen.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/BoolData.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/DashMovement.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/ChangeMaterial.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/EventInvokeBeforeAndAfterCoroutine.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/CharacterControllerMovement.cs" />
@@ -109,12 +108,14 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/SetLocation.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/KnockBack.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/OnStartEvents.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/ImageDisplay.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Enabler.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/OnEnterKeyDown.cs" />
         <option value="$PROJECT_DIR$/Assets/Dice/CreateExplosionForce.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/OnSpaceEvent.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/EnemyBehaviorsPrototype.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/DashMovement.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/OnKeyDown.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/ImageDisplay.cs" />
       </list>
     </option>
   </component>
@@ -199,6 +200,7 @@
       <workItem from="1585854491925" duration="11901000" />
       <workItem from="1586039740963" duration="599000" />
       <workItem from="1586561835337" duration="1832000" />
+      <workItem from="1586797889253" duration="4151000" />
     </task>
     <servers />
   </component>

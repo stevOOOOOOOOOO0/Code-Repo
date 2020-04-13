@@ -79,4 +79,11 @@ public class DashMovement : MonoBehaviour
     {
         YValue = newGravity;
     }
+
+    public void DashToTransformPosition(Transform NP)
+    {
+        Controller.enabled = false;
+        transform.position = NP.position;
+        Controller.enabled = true;
+    }
 }

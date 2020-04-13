@@ -68,6 +68,7 @@
           </e>
           <e p="ObjectId.cs" t="Include" />
           <e p="OnEnterKeyDown.cs" t="Include" />
+          <e p="OnKeyDown.cs" t="Include" />
           <e p="OnMouseClickUnityEvent.cs" t="Include" />
           <e p="OnSpaceEvent.cs" t="Include" />
           <e p="OnStartEvents.cs" t="Include" />
